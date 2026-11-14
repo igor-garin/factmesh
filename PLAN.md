@@ -117,11 +117,13 @@ one.
 - [x] `LICENSE`, `SECURITY.md` (how to report a vulnerability),
       `CONTRIBUTING.md`.
 - [x] CI on every push: tests, spec vectors, hostile-input tests.
-- [ ] Publish the client to PyPI. Confirm a clean machine can run it with one
-      command.
-- [ ] Document the one-line setup for Claude Code and at least one other agent
+- [x] Publish the client to PyPI. Confirm a clean machine can run it with one
+      command. (0.1.0, trusted publishing; `uvx factmesh` verified in a clean
+      environment)
+- [x] Document the one-line setup for Claude Code and at least one other agent
       host, so the project is visibly not tied to one vendor.
 - [ ] Tag `v0.1.0` and write release notes that state the known risks plainly.
+      (Tagged and released; GitHub release notes still to write.)
 - [ ] Submit to the public MCP server directories.
 - [ ] Announce: a short post explaining the idea, linked from Hacker News,
       relevant Reddit and Discord communities, and Nostr itself.

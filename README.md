@@ -38,7 +38,19 @@ The agent calls `lookup("npm:@anthropic-ai/sdk")` and gets back:
 `checked_at` is when your computer ran the check, not when someone published
 the claim.
 
-Any MCP host works: the server is `uvx factmesh mcp` over stdio. It needs
+### Other MCP hosts
+
+Hosts that take a JSON config (Claude Desktop, Cursor, Windsurf, and others):
+
+```json
+{
+  "mcpServers": {
+    "factmesh": { "command": "uvx", "args": ["factmesh", "mcp"] }
+  }
+}
+```
+
+The server is `uvx factmesh mcp` over stdio. It needs
 [uv](https://docs.astral.sh/uv/), which fetches a suitable Python (3.12 or
 3.13) if you don't have one. Python 3.14 waits on prebuilt packages of the
 signing library, `coincurve`.
