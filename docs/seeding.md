@@ -22,6 +22,17 @@ uv run factmesh seed --dry-run     # show what would be published
 uv run factmesh seed               # publish with this installation's key
 ```
 
+## The project's seeder
+
+The hourly job in this repository publishes with the key
+
+```
+56bd40240566612072ef7cb725197ab6536ddfd37f214e25ba100ea26447ba69
+```
+
+Receivers treat it like any other publisher: its claims are checked like
+everyone else's, and the key gains standing only from claims that pass.
+
 ## Running it on GitHub Actions
 
 [`.github/workflows/seed.yml`](../.github/workflows/seed.yml) runs it every
