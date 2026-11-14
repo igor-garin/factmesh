@@ -105,18 +105,18 @@ one.
 - [x] Write a small seed publisher: it watches new releases of the most-used
       npm and PyPI packages and publishes a claim for each. (`factmesh seed`, 50
       packages; see docs/seeding.md)
-- [ ] Run it as a scheduled GitHub Actions job in the public repo. It is free,
-      and anyone can fork it and run a second copy. (Workflow written; needs the
-      public repository and the `FACTMESH_SEED_KEY` secret.)
+- [x] Run it as a scheduled GitHub Actions job in the public repo. It is free,
+      and anyone can fork it and run a second copy. (Hourly since 2026-11-14.)
 
 ## Phase 8: public release
 
-- [ ] `git init`, first commit, public GitHub repository.
-- [ ] `README.md`: what it is in three sentences, a one-line install, a
+- [x] `git init`, first commit, public GitHub repository.
+      (github.com/igor-garin/factmesh)
+- [x] `README.md`: what it is in three sentences, a one-line install, a
       30-second demo, the safety model, how to turn publishing on.
-- [ ] `LICENSE`, `SECURITY.md` (how to report a vulnerability),
+- [x] `LICENSE`, `SECURITY.md` (how to report a vulnerability),
       `CONTRIBUTING.md`.
-- [ ] CI on every push: tests, spec vectors, hostile-input tests.
+- [x] CI on every push: tests, spec vectors, hostile-input tests.
 - [ ] Publish the client to PyPI. Confirm a clean machine can run it with one
       command.
 - [ ] Document the one-line setup for Claude Code and at least one other agent
