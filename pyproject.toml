@@ -1,6 +1,6 @@
 [project]
 name = "factmesh"
-version = "0.1.0.dev0"
+version = "0.1.0"
 description = "Fresh, checkable facts for AI agents, shared over an open network"
 readme = "README.md"
 requires-python = ">=3.12,<3.14"
