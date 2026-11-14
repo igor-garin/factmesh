@@ -13,12 +13,14 @@ from .check import run_check
 from .claim import ALLOWLIST, MAX_LIFETIME, Rejected, claim_text, parse_claim, validate_topic
 from .event import KIND, NAMESPACE
 from .fetch import Fetcher
-from .receiver import Receiver, facts
+from .receiver import Receiver
 from .relay import RelayHealth, RelayPool
 from .reputation import Reputation
 from .store import Store
 
 log = logging.getLogger("factmesh")
+
+MAX_SUBSCRIBE_TOPICS = 20
 
 INSTRUCTIONS = f"""\
 Fresh facts about software packages and repositories (npm, PyPI, GitHub),
@@ -115,16 +117,20 @@ def build(app: App | None = None) -> MCPServer:
     async def subscribe(topics: list[str]) -> dict:
         """Keep facts for these topics fresh in the background for the rest of
         this session, so later lookups include claims that arrive meanwhile.
-        Returns the facts already known for each topic."""
+        Returns the current verified facts for each topic, like `lookup`.
+        At most 20 topics per call."""
+        if len(topics) > MAX_SUBSCRIBE_TOPICS:
+            return {"error": f"at most {MAX_SUBSCRIBE_TOPICS} topics per call"}
         for t in topics:
             if err := _topic_error(t):
                 return err
         a = get_app()
         a.topics |= set(topics)
         a._restart_follower()
-        now = datetime.now(timezone.utc)
+        results = await asyncio.gather(*(a.receiver.lookup(t) for t in topics))
         return {"subscribed": sorted(a.topics),
-                "facts": {t: facts(a.store, t, now) for t in topics}, "note": FACT_NOTE}
+                "facts": {t: found for t, (found, _) in zip(topics, results)},
+                "note": FACT_NOTE}
 
     @server.tool()
     async def publish(topic: str, kind: str, url: str, expect: str | int | float | bool | None,

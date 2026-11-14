@@ -187,6 +187,28 @@ def test_subscribe_picks_up_live_claims(tmp_path):
     assert status["subscriptions"] == ["npm:left-pad"] and status["stored_claims"] == 1
 
 
+def test_subscribe_returns_existing_claims_on_first_call(tmp_path):
+    async def go():
+        r = await FakeRelay().start()
+        r.add(published_claim(Signer()))
+        app = make_app(tmp_path, [r.url])
+        out = await call(build(app), "subscribe", {"topics": ["npm:left-pad", "pypi:requests"]})
+        app._follower.cancel()
+        await r.stop()
+        return out
+
+    out = asyncio.run(go())
+    assert [f["expect"] for f in out["facts"]["npm:left-pad"]] == ["1.3.0"]
+    assert out["facts"]["pypi:requests"] == []
+
+
+def test_subscribe_limits_topics_per_call(tmp_path):
+    async def go():
+        topics = [f"npm:pkg{i}" for i in range(21)]
+        return await call(build(make_app(tmp_path, [])), "subscribe", {"topics": topics})
+    assert "at most 20" in asyncio.run(go())["error"]
+
+
 def test_stdio_server_end_to_end(tmp_path):
     """Start `factmesh mcp` as a subprocess and talk to it like an agent host."""
     from mcp.client.session import ClientSession
