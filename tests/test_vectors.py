@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from afx.check import FetchError, Response
-from afx.validate import validate_event
+from factmesh.check import FetchError, Response
+from factmesh.validate import validate_event
 
 VECTORS = json.loads(
     (Path(__file__).parent.parent / "spec" / "vectors" / "vectors.json").read_text())

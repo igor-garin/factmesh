@@ -1,9 +1,9 @@
-# Agent fact exchange: design principles
+# factmesh: design principles
 
-Working name. An open protocol that lets AI agents running at the same time
+An open protocol that lets AI agents running at the same time
 share fresh, checkable facts with each other, with no central service.
 
-Status: draft v0. Nothing is built yet.
+Status: v0. Implemented in this repository; see [PLAN.md](PLAN.md).
 
 ## The problem
 

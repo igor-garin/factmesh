@@ -6,10 +6,10 @@ from pathlib import Path
 
 
 def home() -> Path:
-    if os.environ.get("AFX_HOME"):
-        return Path(os.environ["AFX_HOME"])
+    if os.environ.get("FACTMESH_HOME"):
+        return Path(os.environ["FACTMESH_HOME"])
     base = os.environ.get("XDG_DATA_HOME") or Path.home() / ".local" / "share"
-    return Path(base) / "afx"
+    return Path(base) / "factmesh"
 
 
 def write_atomic(path: Path, data: bytes, mode=0o644):

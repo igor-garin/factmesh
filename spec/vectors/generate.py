@@ -18,7 +18,7 @@ from pathlib import Path
 
 from coincurve import PrivateKey
 
-KEY = PrivateKey(hashlib.sha256(b"afx test vector key - not secret").digest())
+KEY = PrivateKey(hashlib.sha256(b"factmesh test vector key - not secret").digest())
 PUBKEY = KEY.public_key_xonly.format().hex()
 AUX = bytes(32)
 
@@ -44,7 +44,7 @@ BASE = {
     "topic": "npm:left-pad",
     "title": "npm left-pad latest is 1.3.0",
     "status": "stable",
-    "generated": {"by": "afx-vectors/0", "at": T(GEN)},
+    "generated": {"by": "factmesh-vectors/0", "at": T(GEN)},
     "stale_after": T(STALE),
     "check": {
         "kind": "json-field-equals",
@@ -117,9 +117,9 @@ def event(fields, *, body=None, raw=None, kind=30078, created=GEN, tags=None,
     text = raw if raw is not None else (content(fields) if body is None
                                          else content(fields, body))
     t = {
-        "d": ["d", "afx:" + claim_key(fields["check"])],
-        "L": ["L", "afx"],
-        "l": ["l", "claim", "afx"],
+        "d": ["d", "factmesh:" + claim_key(fields["check"])],
+        "L": ["L", "factmesh"],
+        "l": ["l", "claim", "factmesh"],
         "t": ["t", fields["topic"]],
         "expiration": ["expiration", str(ts(fields["stale_after"]))],
     }
@@ -312,7 +312,7 @@ def build():
 
     rej("reject-missing-label", "No L tag.", event(BASE, drop_tags=("L",)), "not-a-claim")
     rej("reject-unknown-version", "l tag of a version this client does not implement.",
-        event(BASE, tag_overrides={"l": ["l", "claim/1", "afx"]}), "not-a-claim")
+        event(BASE, tag_overrides={"l": ["l", "claim/1", "factmesh"]}), "not-a-claim")
 
     rej("reject-too-large", "Content over 8192 bytes.",
         event(BASE, body="x" * 8300), "too-large")
@@ -416,10 +416,10 @@ def build():
         event(BASE, tag_overrides={"expiration": ["expiration", str(ts(STALE) + 86400)]}),
         "tag-mismatch")
     rej("reject-d-tag-mismatch", "d tag is not the claim key.",
-        event(BASE, tag_overrides={"d": ["d", "afx:" + "0" * 32]}), "tag-mismatch")
+        event(BASE, tag_overrides={"d": ["d", "factmesh:" + "0" * 32]}), "tag-mismatch")
     rej("reject-duplicate-t-tag", "A required tag appears twice.",
-        event(BASE, tags=[["d", "afx:" + claim_key(BASE["check"])], ["L", "afx"],
-                          ["l", "claim", "afx"], ["t", "npm:left-pad"], ["t", "npm:react"],
+        event(BASE, tags=[["d", "factmesh:" + claim_key(BASE["check"])], ["L", "factmesh"],
+                          ["l", "claim", "factmesh"], ["t", "npm:left-pad"], ["t", "npm:react"],
                           ["expiration", str(ts(STALE))]]), "tag-mismatch")
 
     rej("reject-created-far-from-generated", "created_at an hour after generated.at.",

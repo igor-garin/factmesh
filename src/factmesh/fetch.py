@@ -12,7 +12,7 @@ from .check import FetchError, Response
 
 TIMEOUT_SECONDS = 10.0
 MAX_BODY_BYTES = 8 * 1024 * 1024
-USER_AGENT = f"afx-client/{__version__}"
+USER_AGENT = f"factmesh-client/{__version__}"
 
 
 class _PinnedConnection(http.client.HTTPSConnection):

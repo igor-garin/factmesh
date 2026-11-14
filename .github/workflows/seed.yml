@@ -1,6 +1,6 @@
 # Publishes "latest version" claims for seed/packages.toml every hour, so the
 # network has facts before it has users. Needs the repository secret
-# AFX_SEED_KEY (64 hex characters); see docs/seeding.md.
+# FACTMESH_SEED_KEY (64 hex characters); see docs/seeding.md.
 
 name: Seed
 
@@ -26,7 +26,7 @@ jobs:
           persist-credentials: false
       - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2  # v10.3.3
       - name: Publish claims
-        run: uv run --locked afx seed --key-env AFX_SEED_KEY
+        run: uv run --locked factmesh seed --key-env FACTMESH_SEED_KEY
         env:
-          AFX_SEED_KEY: ${{ secrets.AFX_SEED_KEY }}
-          AFX_HOME: ${{ runner.temp }}/afx
+          FACTMESH_SEED_KEY: ${{ secrets.FACTMESH_SEED_KEY }}
+          FACTMESH_HOME: ${{ runner.temp }}/factmesh

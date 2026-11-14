@@ -20,7 +20,7 @@ from .event import KIND, NAMESPACE, Signer
 from .relay import RelayPool
 from .validate import static_event
 
-AGENT = f"afx-seed/{__version__}"
+AGENT = f"factmesh-seed/{__version__}"
 
 
 @dataclass(frozen=True)

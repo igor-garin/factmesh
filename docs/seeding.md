@@ -6,7 +6,7 @@ An empty network is useless to its first user, so a seed publisher keeps
 
 ## What it does
 
-`afx seed` runs once and exits:
+`factmesh seed` runs once and exits:
 
 1. Reads the latest version of each listed package from npm or PyPI.
 2. Asks the relays for the claims its key already has (one query).
@@ -18,18 +18,18 @@ Run hourly, a new release reaches the network within about an hour, and an
 unchanged package is republished about once a day.
 
 ```
-uv run afx seed --dry-run     # show what would be published
-uv run afx seed               # publish with this installation's key
+uv run factmesh seed --dry-run     # show what would be published
+uv run factmesh seed               # publish with this installation's key
 ```
 
 ## Running it on GitHub Actions
 
 [`.github/workflows/seed.yml`](../.github/workflows/seed.yml) runs it every
-hour at minute 17. It needs one repository secret, `AFX_SEED_KEY`: a 64-hex
+hour at minute 17. It needs one repository secret, `FACTMESH_SEED_KEY`: a 64-hex
 character signing key used only for seeding.
 
 ```
-python3 -c "import secrets; print(secrets.token_hex(32))" | gh secret set AFX_SEED_KEY
+python3 -c "import secrets; print(secrets.token_hex(32))" | gh secret set FACTMESH_SEED_KEY
 ```
 
 The key never appears in the repository or the logs; the run prints only the
@@ -40,7 +40,7 @@ for each fact.
 ## Adding packages
 
 Add the name to `seed/packages.toml`. PyPI names must be normalized
-(lowercase, `-` instead of `_` or `.`); `afx seed` refuses the list otherwise.
+(lowercase, `-` instead of `_` or `.`); `factmesh seed` refuses the list otherwise.
 
 ## Live run, 2026-11-14
 

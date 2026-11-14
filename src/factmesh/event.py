@@ -11,7 +11,7 @@ from coincurve import PrivateKey, PublicKeyXOnly
 from .claim import Claim, Rejected
 
 KIND = 30078
-NAMESPACE = "afx"
+NAMESPACE = "factmesh"
 LABEL = "claim"
 MAX_CLOCK_SKEW = 300
 
@@ -59,11 +59,11 @@ def _tags(ev, name):
 
 
 def check_labels(ev):
-    """Step 3: exactly one `L afx` and one `l claim afx` (SPEC.md §5, §10)."""
+    """Step 3: exactly one `L factmesh` and one `l claim factmesh` (SPEC.md §5, §10)."""
     big = [t for t in _tags(ev, "L") if t[1:2] == [NAMESPACE]]
     small = [t for t in _tags(ev, "l") if len(t) >= 3 and t[2] == NAMESPACE]
     if len(big) != 1 or len(small) != 1 or small[0][1] != LABEL:
-        raise Rejected("not-a-claim", "missing or unknown afx label")
+        raise Rejected("not-a-claim", "missing or unknown factmesh label")
 
 
 def check_tags(ev, claim):

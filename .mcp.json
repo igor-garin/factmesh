@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "afx": {
+    "factmesh": {
       "command": "uv",
-      "args": ["run", "afx", "mcp"]
+      "args": ["run", "factmesh", "mcp"]
     }
   }
 }

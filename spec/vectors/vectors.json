@@ -1,28 +1,28 @@
 {
   "spec_version": "0",
-  "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+  "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
   "vectors": [
     {
       "name": "pass-npm-dist-tag",
       "description": "npm latest dist-tag equals expect.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -33,9 +33,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -70,22 +70,22 @@
       "description": "PyPI project version via JSON Pointer.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:0d032353ff0c819cf8c41bfdc068e943"
+            "factmesh:0d032353ff0c819cf8c41bfdc068e943"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -96,9 +96,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"pypi:requests\"\ntitle: \"requests latest is 2.32.3\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://pypi.org/pypi/requests/json\"\n  pointer: \"/info/version\"\n  expect: \"2.32.3\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "e7c790ea1f3cab40a06df5f51fa938bb4ae2c84b404b5fd8b076897906494625",
-        "sig": "e47c07c34a4433a7766d6a0e10755031c52fe0368a0c8e3d96811e4f25b4ebc174af97e208cc7e0d697721d7bbbb4e82bbf1b2b8c19a9dd7abd6836e1fed3f18"
+        "content": "---\ntype: \"Claim\"\ntopic: \"pypi:requests\"\ntitle: \"requests latest is 2.32.3\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://pypi.org/pypi/requests/json\"\n  pointer: \"/info/version\"\n  expect: \"2.32.3\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "39d71d75c258c3f1b6c73b5ff9220e86a227b6746508d1f9cd06a75c59253dd7",
+        "sig": "396e7ec5425470d4ef48c507cf5db743e9af551b716da2c04e3e62b7f64ebd50dfa12bae64ac0835985c7650952bd2e8d052083c137474df9d57855173b45f3e"
       },
       "dns": {
         "api.github.com": [
@@ -133,22 +133,22 @@
       "description": "Scoped npm name appears literally in topic and URL.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:15cd002b5f89f20931c8bbe6851c9c50"
+            "factmesh:15cd002b5f89f20931c8bbe6851c9c50"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -159,9 +159,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:@types/node\"\ntitle: \"@types/node latest\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/@types/node/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"22.10.1\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "d00ff2a111067df1fc13ca7c55c80766d8a56d41d5560c351f5c3f5227889563",
-        "sig": "2725958147cce56e7495bf5e6da56fcf6deaeb847e4d2b13256f65ab7fa5ca780d0843583f7fa880f122ad71d7602d94cc234303230c3815b35f7845a9c580ac"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:@types/node\"\ntitle: \"@types/node latest\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/@types/node/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"22.10.1\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "cdae9903971b16e11de4a9a9285d71932cdaa38d72f3b55c97dd9014d7cb6d9d",
+        "sig": "c08802c74b2ef6fbecf0893a110198fa227df6cb19434d5c6e80a0e505582782d283701be2efd020f82fa0631fa2b5f4fde0d32502d1dfb028165e2940a4b3d9"
       },
       "dns": {
         "api.github.com": [
@@ -196,22 +196,22 @@
       "description": "An endpoint that does not exist returns 404.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:294ed4a28f3582496f56202085208786"
+            "factmesh:294ed4a28f3582496f56202085208786"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -222,9 +222,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"no v99 release\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://api.github.com/repos/psf/requests/releases/tags/v99.0.0\"\n  expect: 404\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7607ac00257ee994e86bdb79489235a32ce72159d78b8a3a8c420c9eada2e8ed",
-        "sig": "0e59c0fcd502bce8741ee23a564d7c7bcf073d08f50d60bac0729624c21f7ad222517de2c0867136e8953a3959262072e73c6fd485c2f804614735169aef497a"
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"no v99 release\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://api.github.com/repos/psf/requests/releases/tags/v99.0.0\"\n  expect: 404\n---\nTest vector. Never shown to an agent.\n",
+        "id": "2f15d2cc17f0518874396896d96e2dfd3b4accde71fd7db616a72aeef0376f0c",
+        "sig": "5c86c636a0af49b252752db17ab9b3e3131854819f912bac1c9f8736948dd55089a07f24d228d82c972112cab4c8b9560bb3a540be74138e3ba5c691f6ef59e5"
       },
       "dns": {
         "api.github.com": [
@@ -259,22 +259,22 @@
       "description": "Release page contains the expected sentence.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:01e61a867eb99d4d6febad8676ed5058"
+            "factmesh:01e61a867eb99d4d6febad8676ed5058"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -285,9 +285,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"release page\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/psf/requests/releases/tag/v2.32.3\"\n  expect: \"Fix a regression in proxy handling\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "a5e0c2b9a277f10c4e22f77b4854f22aafbfb16823ccab57a816bc4cdf09eb61",
-        "sig": "420f1e7c6c2dcb923678d2b6eddb576e918c2fabfacbb929b13521a16313d793293fb100847bf9dc01f9deae9c95be3238eb84742e721921fb6338ee3743777f"
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"release page\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/psf/requests/releases/tag/v2.32.3\"\n  expect: \"Fix a regression in proxy handling\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "8379157470bafebe067508ef8c25a5d3ff8e1568b672940e8a921d611eb829dc",
+        "sig": "e46c04111b2a3ce607dd262c18258bd8b094f32b3ccc892e43b2f254ea15ff13bf4621479a6c00b145251df58d454fd7e0f467a000f1f07c3d1bd8a152ac2084"
       },
       "dns": {
         "api.github.com": [
@@ -322,22 +322,22 @@
       "description": "One redirect to another URL that satisfies the URL rules and binding.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:7edb016d850b59c2f8f812ba9921ec38"
+            "factmesh:7edb016d850b59c2f8f812ba9921ec38"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -348,9 +348,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/left-pad/latest\"\n  pointer: \"/version\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "75be9010812f28299700a1797e1643571b0f0f5f09881f18b0a43800351f8887",
-        "sig": "80d905d055972e2ff6a8cf93e88de5d7f2424056e2a5c684e6937b76181ce588f9b7d0f56ba664cf4bf957bdcca390c2138534ad0c90357beede80a378facb8b"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/left-pad/latest\"\n  pointer: \"/version\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5e0aa51b58c94133c4cb02c67ce97907efa479597bf1e90b434363b5b1044494",
+        "sig": "ac0e3813c016743ccd5fc35c3109780beea5140e45daee3bd2930526ebfe7bce2520e82f43492cba59882263924ad3fb370bdc75dbc1e167a0a3eac10f5edad4"
       },
       "dns": {
         "api.github.com": [
@@ -394,22 +394,22 @@
       "description": "The registry reports a different version.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -420,9 +420,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -457,22 +457,22 @@
       "description": "JSON equality is strict: \"1\" is not 1.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -483,9 +483,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: 1\n---\nTest vector. Never shown to an agent.\n",
-        "id": "32903e665c92eb3bb6d697e5a4dadb8bb2c4e963392d53270acdb4ef21f6a415",
-        "sig": "dbed16b417c9001f2723e0fb2396551b3093765fe5417f9141b75f1f32c0cb89398d263bbb875c879e5359de2e79a088bf9a73467a9e5488e5d0aa863aa5edd9"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: 1\n---\nTest vector. Never shown to an agent.\n",
+        "id": "3612aea60f8ee2f159b898cfe4f1cedd27f0da3e843d565d1852497d422ea313",
+        "sig": "4e3b44cfd365a5993a74be826564e7f181891edcd6bd7c7b824985c9d4bd1ae7c4040a5aa80f793fdffa8b111e988d89b6bc21faf7af4816d9a6fc326129b485"
       },
       "dns": {
         "api.github.com": [
@@ -520,22 +520,22 @@
       "description": "A JSON check on a body that is not JSON fails.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -546,9 +546,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -583,22 +583,22 @@
       "description": "A pointer that does not resolve fails.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -609,9 +609,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -646,22 +646,22 @@
       "description": "A pointer to an object never passes.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:29904813e7e8613bf38ca10f9e76b6ce"
+            "factmesh:29904813e7e8613bf38ca10f9e76b6ce"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -672,9 +672,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "1decbcb34f60d994f6495ba54f296ccb60bf5bb28cabeaf23ed994a5a324e103",
-        "sig": "eb1c2278d712d146652eb81491516bfb52fcb0ac8950865fb629be1009b5eb74ef2d19c34346d90a882cb13c6c3c647db02f90ce4d6e70d6537f82877fa39970"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "a2f12dc6b03bdfb8e179e415d4e30e6ec416628c9daac41f39ac6633f5291304",
+        "sig": "4a77f0d1fe3b6add2301c4e27caa3dee348cc68a5a2dadf615f5c5b7fe3b7011b08397a797778e6afe90b2c6bab935a0defac39cc573f25ab3c4305fd71edfc5"
       },
       "dns": {
         "api.github.com": [
@@ -709,22 +709,22 @@
       "description": "http-status does not follow redirects: a 301 is the result.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:90a924fe4bd7c54469c53db2c6c30e28"
+            "factmesh:90a924fe4bd7c54469c53db2c6c30e28"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -735,9 +735,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://api.github.com/repos/psf/requests\"\n  expect: 200\n---\nTest vector. Never shown to an agent.\n",
-        "id": "ea99254eb438a206e1f44c3f13b239e7c33ab994aeaac9e9ba6022cdd6d2adb1",
-        "sig": "e3c09a124334b6ea33d6489cc1fcc8466561f54e14c3e7144f7ff0b4c76c2819d9714738d6c986dc662030aa70ca856aeca5de290c35ea5e1fe8d3de4603fa9f"
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://api.github.com/repos/psf/requests\"\n  expect: 200\n---\nTest vector. Never shown to an agent.\n",
+        "id": "6a1573a74f1c790abb7a0d681a6251401781613f65e148a25cf610ce5d193151",
+        "sig": "763f228c10bb9fe3c6922a32a5fb151bac50ff358cb44aae332c5f95ca2360426e34f1ef163393a7a7eac1fd4ee5b390be1e37292b785a6e6fcd12a34ec51880"
       },
       "dns": {
         "api.github.com": [
@@ -773,22 +773,22 @@
       "description": "A JSON check needs status 200, even if the body matches.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -799,9 +799,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -836,22 +836,22 @@
       "description": "JSON equality is strict: true is not 1.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -862,9 +862,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: true\n---\nTest vector. Never shown to an agent.\n",
-        "id": "0a158f5501e1041568703f31303cfee47df7b9972c60571e2f57a26b745e2ebf",
-        "sig": "b4bed6fc4d60d32563619c37d0e1f0b27b8a3c6ae26bb5a71d7d5113b46c4ab9143dd4e6824d4d30999eed7c8cfbf969af0ebd8928537ebd87105cd399f88b34"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: true\n---\nTest vector. Never shown to an agent.\n",
+        "id": "aa84a77a8179dfbd484ed34569770937d409ac5a0c9d27aae080046be32b1ad2",
+        "sig": "1f71a0f6f5c6939ef5f434356b686dd578c586e6024c4da358484c70f1be07b25c72e70001afb33d190839842011b4b93d193d010d11612f4ebf862b057e56c2"
       },
       "dns": {
         "api.github.com": [
@@ -899,22 +899,22 @@
       "description": "No response within 10 s: no conclusion.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -925,9 +925,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -963,22 +963,22 @@
       "description": "A redirect to a URL outside the topic binding gives error, not fail.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:b13ca0a2ef05f567d9c879599093cf4f"
+            "factmesh:b13ca0a2ef05f567d9c879599093cf4f"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -989,9 +989,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://api.github.com/repos/psf/requests\"\n  pointer: \"/archived\"\n  expect: false\n---\nTest vector. Never shown to an agent.\n",
-        "id": "19453676fbd9fa40ccebd7cecb54f3d17976a91ebd2a7de092e6ff5fb22c294d",
-        "sig": "d57d1c0449a00308900981e9c76740e4ff2badef53884d21c096bd7207532f2197686632b1a8c33faa55b18515cb0ba49a9ef3189b395caf8fbef35b12578fdb"
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://api.github.com/repos/psf/requests\"\n  pointer: \"/archived\"\n  expect: false\n---\nTest vector. Never shown to an agent.\n",
+        "id": "b13919bfebaf4fbf591b8386dc2ac2233c8bbe751c7b3e55c825e01d3ac7125f",
+        "sig": "142e2c8734107cb5ded96db239a1645bd94e7493298a39f9c11861950350a0586b586289d1c89e95ea0db8af11b05761df2c1fa679353d2b9d2612ecf82c0a9f"
       },
       "dns": {
         "api.github.com": [
@@ -1027,22 +1027,22 @@
       "description": "An allowlisted host that resolves to a private address is not contacted.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1053,9 +1053,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "registry.npmjs.org": [
@@ -1072,22 +1072,22 @@
       "description": "A body over 8 MiB gives error.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1098,9 +1098,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -1136,22 +1136,22 @@
       "description": "status: deprecated retracts without running the check.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1162,9 +1162,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"deprecated\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "bfc98b476759cf103c32e56c12475ba0b2af8496bd8fda462ef1d6d01bcdb87e",
-        "sig": "19490613c1ee68ec3c1e9009a02101c7d3f579cd8f55c525f94921051f8e73c232ee6824d0947e59babe4c9ca735fc675555ca9eedf88b6437fdc7ee416ac52b"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"deprecated\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "998e5a4749891ba5d7b3eef81f43e2354a0d6b4088c35f6cf5a45db4b9c915f7",
+        "sig": "07aef15232dca658830ccb7994acb9569b29588067f1635609ab62ba0000bec49df75552e7bbe4ec3c7f2c45ebb7729931d64e120af821137729643efe8d7f6b"
       },
       "dns": {
         "api.github.com": [
@@ -1190,22 +1190,22 @@
       "description": "Kind 1 is not a claim.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 1,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1216,9 +1216,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "3befa8387d92a0ae02145e959a1115d8494f9e4465a2b9c619d4ceafbbcf5715",
-        "sig": "cdbef8811772375e36387d2bc854ac25d018306aecd2acf6c6d0518a2197d29d683ad06dc2214f77a6acaf18c67ea2d315f0ad6cf2a7267c590eda9322968a7c"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "314a68cb9be0ec01d2c65faa506ed05b405cc114a60217adb1b096dd33bc9268",
+        "sig": "af7fd8363ab6bc5121f26e8e5dd3088461db375532de94e6db8259efe63c29a90e1f69ba90d9480defae9edfb9574d4e58a95c174b0c6b64a478d73b534a4d6d"
       },
       "dns": {
         "api.github.com": [
@@ -1245,22 +1245,22 @@
       "description": "One signature character changed.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1271,9 +1271,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "16b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "0bdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -1300,22 +1300,22 @@
       "description": "Content changed after signing.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1326,9 +1326,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.1\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.1\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.1\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.1\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -1355,22 +1355,22 @@
       "description": "Correctly signed, but created_at is a string.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": "1794650400",
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1381,9 +1381,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "1b51b87de35d5ce024f493e1cec63e4c698e9a63f9147bb65a69086ad987bbf2",
-        "sig": "2b0066d69d8143732ca63d7407f4d85c24e89872adfb7d9ac5e6b5bda42e1c143ef04ca7a37eaa6ec7bdb0db89e71e60c1eb4edb11cf0a1cad2b6c8aaaf6ab18"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "6fe485678f5a79a93a3b4e6325b55c486e135f1f3cc639d614c9c0c3c323a015",
+        "sig": "ce311100c3b02567692f0ad3727177944110a100e08e7d1b924ee49ece0e0662c818b49bff263cc21db91d475d827baee09f9c33504f7b6bf3c91c956412ebf6"
       },
       "dns": {
         "api.github.com": [
@@ -1410,22 +1410,22 @@
       "description": "A tag that is an empty list.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1437,9 +1437,9 @@
           ],
           []
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "d1b07d3b8c923e660b1c12f51140a33a740623ed640109872803dd09e709cc04",
-        "sig": "2908e2f7f2c22251a2682a358acfa3553c1ffed73b286a677460853afb70d30f9d807dbf2abbc6d2078742edcadfaa1df22ade8fe222009c7c9b71d185a200b4"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "8df153772acf44d2c3590a17f7af17aa437e1636b387c5b897c62f0f0efed458",
+        "sig": "6e83d1ec3a5282a1fb0020a9a9adf04c3b6a4840a0f78f4a81b2ff7498ab2441e60b422807318ea81c16eba0abb363b65e0586d76e6cf71634cf119d34fd27d1"
       },
       "dns": {
         "api.github.com": [
@@ -1466,22 +1466,22 @@
       "description": "Pubkey must be lowercase hex.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3C9DB3670DFD85836161B5558C3E3F90D806DE9ABF5DF3DEB44308EA08ADCFA3",
+        "pubkey": "40BBC5977CD0505BC26D341A5D6BA4E7A95BFD85EAC4A4E30B76DE81F85ED76D",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1492,9 +1492,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -1521,18 +1521,18 @@
       "description": "No L tag.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1543,9 +1543,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "da410821f91e95244b2884269c02bdaf265eee57eccdc4209a21ba42ea75f2eb",
-        "sig": "f77257d13f6b28003be1b423ad9728ad3fef20d28888d74d4533aeecf54f9f83a74f6094343fd11ac1f1c15fe92c0b98286e288b0519143f6ab47b3cb4e565f4"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "be6df72e074d044819e2bbd7e5701b87b298e97aa866384f2444ec596464ad15",
+        "sig": "6952dc7f8eda402a9f00ef2f2f6d7699b60b43aa090962e95a879203651ff6f3764b6901ec32c65d8ef286977933350e11b7cdbeee34e726aaaf59e2c562ac42"
       },
       "dns": {
         "api.github.com": [
@@ -1572,22 +1572,22 @@
       "description": "l tag of a version this client does not implement.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim/1",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1598,9 +1598,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "23aaee98adbe3dce6aeb83700d16f27b8c5aaa0cfaaaff1874d0de480e0d4386",
-        "sig": "28d1af4d66dc3f861de68269e131406447395c47b04c16752256e95a79008b91b328a04e57aa0b23ada5ed8ce664c9d81dab0022cec95c2b122c17389ea7090f"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "58731320fc68eda47225a6cbe27180c86cf279e0837a252da5615b8f2faed723",
+        "sig": "3327e1b2ac92f397b3eb84ea4302aa9907c3606d8c99ecae1792eeb1f24668ee083df7a1f2487a62e9346800eaf19d4b2f18b1b34cb786d14e88f98328f16f25"
       },
       "dns": {
         "api.github.com": [
@@ -1627,22 +1627,22 @@
       "description": "Content over 8192 bytes.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1653,9 +1653,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "id": "e84b221f075e3e897f6d1d1509bdfa8d490e51c0243498f863a3f3463c7447a3",
-        "sig": "2b5545791fbcd476a398ebe405ab5c1d18faca53e78cbbe2c0b5baf034279d7205dc10b77994feedb97456420ebc98a953429eaf364d327743be5f537c6ace94"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "id": "e6ae56e6c665126350b702d718340547a33e1b8b6934766cce49b9a86d6d8da9",
+        "sig": "a8565b69c920856634ad04526d5a079f853eab99536998cce564e876b7beb1f471187b29dae81f4e623d1985700f5e7b8363522f316000e391d2beb5be8b3bc1"
       },
       "dns": {
         "api.github.com": [
@@ -1682,22 +1682,22 @@
       "description": "Content does not start with ---.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1708,9 +1708,9 @@
             "1794736800"
           ]
         ],
-        "content": "type: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\n",
-        "id": "333af6a2254ee53c4e175751e41aeb37ca6d9a05cc2e4045d9bd47df58568e0b",
-        "sig": "653b1db106e6ac557faa675e6ea25e92043b331b3e22ea88ac06deb3969980fbc3fcb3f3d56b6372ba18ffa921038e32300b96e58fc78d26918b184f2d2db9d1"
+        "content": "type: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\n",
+        "id": "43b0a2cfc9ef10b8ece222b2f69193471fe33251140a4cb3846e6b3700fd4558",
+        "sig": "35b1337eda17a8fa2b5b02346b4d5f42d6428b15f1f58a5d00230b8edfd8c9938649c0c6735906101d5940d306f2bd66a862a20bb3f51e44209eda787dfa7d2e"
       },
       "dns": {
         "api.github.com": [
@@ -1737,22 +1737,22 @@
       "description": "YAML anchors and aliases are not allowed.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1763,9 +1763,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: &t npm left-pad\ntags: [*t]\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "38720dd7e98de37b232fc46782f90e1cc38d67d5eff113e57e51711a4b68e32d",
-        "sig": "9ed674ff6b790af687d20e20aa953c179d497d3482e79d657104a38a534a9130a9d870d5494f81bdd544e2bc43dce0df693edbb5a2a34639dd026b28d3204596"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: &t npm left-pad\ntags: [*t]\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "64d2ce0b9e152ccc6e3aa6af9f1fd95123c6acf82813764ffd3fd56131dfcc7f",
+        "sig": "8f14eb2318038f4302ea35e5aa4c08b0dfb92b00c5f313399f86bd59d31e94b790c9e2cbf92e405daa0441688897d14a401494cd475bda5532f7cc66276b0fd0"
       },
       "dns": {
         "api.github.com": [
@@ -1792,22 +1792,22 @@
       "description": "Explicit YAML type tags are not allowed.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1818,9 +1818,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: !!binary aGVsbG8=\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "92cacbf3c82fccfb18f84fbf252a459a101a816af45afaae1075b74ee4c030f3",
-        "sig": "b0444f566815792048b0b55f23c7b635a470f2d0bb6f8d69a0caef5c0e4a7c9b4ccf8582fb6aff03540fdb646e6df961f461bfeb5ff0df1c7b0376159cfd79d8"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: !!binary aGVsbG8=\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "fde9c9d58766f90b67d45b02c6e375af1c076d991dc60f8b10b633aa664cd7a7",
+        "sig": "12864cab307a4a73597b70bee24ededbe166f415b09af4c1978093b19f04a8810fbaae55a586ce82516c73ec60ab7462361b2211fe344e712ecd73b1936e3f8d"
       },
       "dns": {
         "api.github.com": [
@@ -1847,22 +1847,22 @@
       "description": "A key repeated in one mapping.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1873,9 +1873,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\nstatus: \"deprecated\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "89f27b23b73c48b14054aed0b7c1015dfee626db0b405996b2d754f0237dedbb",
-        "sig": "8420e0710690684c28a81b187db430ef97d5d1c923f4261567a76ea6c9bf37b359ce1264fef75c21c7ed4db68a5c1f439a1e4b0e1ff60e162d2abbb6c9805559"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\nstatus: \"deprecated\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7b25be3327f6eb1b4ab96adb93644f8b90715cdd5e09ea3807cc00bf117d41e2",
+        "sig": "cc3d60944a14839d2326375e3421452506238d4acd7d493ff40bc7c1bcc512e5b27c85f4c711d33c3a4347c1bcf2bdd67da610c374be87aedf154efd01d8a9ea"
       },
       "dns": {
         "api.github.com": [
@@ -1902,22 +1902,22 @@
       "description": "Lines must end with LF, not CRLF.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1928,9 +1928,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\r\ntype: \"Claim\"\r\ntopic: \"npm:left-pad\"\r\ntitle: \"npm left-pad latest is 1.3.0\"\r\nstatus: \"stable\"\r\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\r\nstale_after: 2026-11-15T10:00:00Z\r\ncheck:\r\n  kind: \"json-field-equals\"\r\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\r\n  pointer: \"/latest\"\r\n  expect: \"1.3.0\"\r\n---\r\nTest vector. Never shown to an agent.\r\n",
-        "id": "44f5ff3007ff7fc709f6d5e153e8b2c30a95a19db868246591a45ed3f4f5d0d9",
-        "sig": "85486823cab708c53d1b236c6656cba6690211d08eb8c7c5ac0fa7efb133ea8105e2e034ae3ef2da5043df30e72a4dede558ee7b44a34e3cb18f31d9c0a4021e"
+        "content": "---\r\ntype: \"Claim\"\r\ntopic: \"npm:left-pad\"\r\ntitle: \"npm left-pad latest is 1.3.0\"\r\nstatus: \"stable\"\r\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\r\nstale_after: 2026-11-15T10:00:00Z\r\ncheck:\r\n  kind: \"json-field-equals\"\r\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\r\n  pointer: \"/latest\"\r\n  expect: \"1.3.0\"\r\n---\r\nTest vector. Never shown to an agent.\r\n",
+        "id": "47bf74dc27471af8c0a5715af2996c93228f0ff463c0ab6c537614e466a023f8",
+        "sig": "a0c27198094558fc28768d4fdddadc7fec69bb621d6925436467c80ee0b42c1da65af79e4b681cf9717ec952ec592b65005120e352ef67ef9e6aae84524e5d74"
       },
       "dns": {
         "api.github.com": [
@@ -1957,22 +1957,22 @@
       "description": "Header nests deeper than 4 levels.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -1983,9 +1983,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\nextra: {a: {b: {c: {d: {e: 1}}}}}\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a7d0b8dff9ec8d2acf3dbe241c9e930244daaab605a92012a749904a545edb1",
-        "sig": "f7f55e759a84959655f88ad34cd0856bec9204a60483302cd4e3b5eb6e85948b4401b215d74f55173c6903a87764e49a294a04145b115485d392a599816b6487"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\nextra: {a: {b: {c: {d: {e: 1}}}}}\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "df6258469d7d28d98a69593c49f260352be7e812773ac4a7b17bd58d59f9ee05",
+        "sig": "dac37a143c19e7bcc6ba3245de33f6d9b2b1cf98f2d98468eb83c1df0d274f9969ca02580d1eb4bf7ecba937c74f68102aa0bb753290cb1d45b322194dea2e23"
       },
       "dns": {
         "api.github.com": [
@@ -2012,22 +2012,22 @@
       "description": "type is not Claim.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2038,9 +2038,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Note\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "74f33c3238387a503f8ab337613692349fb3d8643ed5a6284b4ed76b3b8168e3",
-        "sig": "a6d3135a5efd22a2565e51ab464e849dacfb2916e9a7ecbb7ecb218920da803fcc0e87be0a1888227e0858e592de839199b0ac8ab0cac4eef1b831243d222c37"
+        "content": "---\ntype: \"Note\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "dc11f03d2ffcf958e57097d04f9969e4568b8121b38dc1788e9705a424735b24",
+        "sig": "e89cab1a0b8fd6c432c7d8a7cf788e622e69401714ce297cdd601ef9408be839217dedd0aea806a224b4f71c0b836d8a0765f59edee39b704aaa12d3195a5528"
       },
       "dns": {
         "api.github.com": [
@@ -2067,22 +2067,22 @@
       "description": "Times must be UTC.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2093,9 +2093,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T12:00:00+02:00\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7db5d49fd55a1b2b77bad6270f3e9edfbebe21d78237e1c73e9ddfdfdbada747",
-        "sig": "57fde4f05ad2a62b3b23a762f16720fe44dd81277bc5b840b2dadb69bfe819cd44c1112b3754c064498edc4c7a730a264f206bb329a402db29047f41b01e80a8"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T12:00:00+02:00\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "3db7608a5d1cd93878e0d36cbdd1e7225ae72253f87230345b4f63ec2e964a83",
+        "sig": "6e020d558e2c8509127dd3ff8d934fffabefb534820b2d5668cd185aa2fd9b836e018d86b6f9ab49e9d0cf80811086ce90fc063f4e0fe0efc43b49ee8f6237a2"
       },
       "dns": {
         "api.github.com": [
@@ -2122,22 +2122,22 @@
       "description": "Times must carry the Z suffix.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2148,9 +2148,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7d2deefcb85f34e91f472c50441c12416f089a000b0e90408567c58506247408",
-        "sig": "50d098c10b7f50173df6706c363623bed3696a3a46026d65b2e2dc273db7252fb641aa0d4f18b01f85544f7460c31d631bf9d3adf491fa1de15017b1710d54a4"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "df429dbf895c9a1d1c815e3f34ace596d52bec8872aa46e688e7eed83b0af7e2",
+        "sig": "8042035fb86925c7de7e9977425853bf5de2e1184a66c1ce4f518019e4bfd7071c3d1e6f4273610e34443d1af074d6f0be84064c2a947b17da9493b1e77c1e47"
       },
       "dns": {
         "api.github.com": [
@@ -2177,22 +2177,22 @@
       "description": "stale_after is required.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2203,9 +2203,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "0afde029db89a316b897fa0403b86fd14979a36b17c863d17a28907ba1667f19",
-        "sig": "b4a32f8a8cb82d03f8786085a2604a9da256c7cdd70e0ed8019e37070669ee87e7c377de6a3f23b15811471fcce18374fdbae934a0605e00174e685d0f815c62"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "1fbb826ab1ed88703dfacfcf98db5eecbea0f8716d072126ac170dfd6e8a3caa",
+        "sig": "786f4fb30f8114ca747a56ba957283243cbe9b93585a52ace7a499feb8b2075955f2320db5de3ce881acc6266a751b3e90b2e6234bede8d93747242b730f55b9"
       },
       "dns": {
         "api.github.com": [
@@ -2232,22 +2232,22 @@
       "description": "generated.by is required.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2259,8 +2259,8 @@
           ]
         ],
         "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "2f5ba01b014619c78625768a952fdaabe8c703b29d603c5571047801f7e69d1d",
-        "sig": "18b7d54a9aa86bc24a317f7eb5812edbaf9fbed8b2fe01e23e861c99ee4ba57ddb1566ed9c81212a06c777186c01ccefa904c8ec126cd8c28454519b0861a728"
+        "id": "c622676f0263b326bbb24f4d235535b52bd1deba781c8b09a78658b9e71c0517",
+        "sig": "87318cac41360c272f954a207b191784b6199fc378e077d58acc7561e5849bb3bfb8266073dae5f3e90057644859c4808e524a49ddc11621d4ababc02593f69e"
       },
       "dns": {
         "api.github.com": [
@@ -2287,22 +2287,22 @@
       "description": "stale_after more than 7 days after generated.at.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2313,9 +2313,9 @@
             "1795255201"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-21T10:00:01Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "21ebfedb80dd2280a0db5a87440bdb6655b17b507de2e1df48b3a33b69399186",
-        "sig": "0ddc5306875b8ff2fbc7e74cfab7d717ccce7d2ddabaaafdf073437d4f978337fc102f43bc0666ad93df216a37c4e2dae7f85f24f34d4459b1f6408ef8003726"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-21T10:00:01Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "a4c8a9cc0055a8725f03e23e638e07b5454f8a9aace879f7d5bac249550a1c2c",
+        "sig": "a00f5c6eea53200610ec27e7d3601e00e4871724289152a8fcb967b78e942bc669b7e089f4ffe76a02b48939e3a7a4a88551f43100ec44148736712b96770a5d"
       },
       "dns": {
         "api.github.com": [
@@ -2342,22 +2342,22 @@
       "description": "stale_after not after generated.at.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2368,9 +2368,9 @@
             "1794650400"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-14T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "506f8372fafae99ecf4760e3430f3b02a3c54c6386f989d845e0b364f12f5888",
-        "sig": "1d8673ced1facce173b26aa5230a563d85242d9fb850c57eb4bc3857c2cf27d7e72bf837bd79de56d24713ae4f358b68176687aba1ad269a5bb033dbc1a1a8ea"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-14T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "c228ea72912da543cb17ce740a08e3d108315a63f8d82cbe4a22fbb65e4c08a4",
+        "sig": "6d3fadea908a32cc65da2dfc36936deae5bea2ff2dc993107933c8728378ffd705d8a9d1d6062c90be7951f5bee98dd7fdbe7cc742afb0b791cfbb3ec1d6c2a8"
       },
       "dns": {
         "api.github.com": [
@@ -2397,22 +2397,22 @@
       "description": "maven: is not a v0 topic.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2423,9 +2423,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"maven:junit\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "01f9bc98d0aec7620114bdd9e7d474eb089f163eef1b2bdbad55208c653470b2",
-        "sig": "446981989b97e7013bbbd1aaf09cce02ad37362df5ccc1c02a944c4ce4a855c2bfb93be060e01e4dcd3b5da4619211102f9ff212d613c18ae8fcea4651bf3458"
+        "content": "---\ntype: \"Claim\"\ntopic: \"maven:junit\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "2c01b98e5eb80080d84113f8889fbfddb6cc195179f8eebe21d97c40d934c1d4",
+        "sig": "5cf141b607bce0884250bbec5a2af2096decc1928ccb1c8b041ee3765559fad3e2d64340ddf98848ef63901e8f1f8ff75a5bb3030d76afd4be9a235d4ce61ff8"
       },
       "dns": {
         "api.github.com": [
@@ -2452,22 +2452,22 @@
       "description": "Topics are lowercase.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2478,9 +2478,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:Left-Pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "726b5e1e11b53cb1818ea1265ac8a1212b41e16f55863cae7e870e29b9f157f6",
-        "sig": "83cad92d104f0d8dd36fa335b7c40761bd0e4937d8107bdb66b9ae0c738e28a3a5f610e255051bb08e643f6f5b420a918a7b15276e744208603c52f051eb40e2"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:Left-Pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "ce3f6d78515ab72f80d70b4dffe82e8eec9125047df1a4e79eaaf01e25a3144d",
+        "sig": "6e5ba20b6663c5b790685214a1f75b56282d5a56aa17deddfe983746e155a82bd60df77d494f437a84eab5b577c44348644b5d208eaf5689a9da76bd455eb2eb"
       },
       "dns": {
         "api.github.com": [
@@ -2507,22 +2507,22 @@
       "description": "PyPI names must be PEP 503 normalized.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2533,9 +2533,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"pypi:foo_bar\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "c129452cfacb55a026fdcf35dd45b787c206bcb8c9cf5e57ea4a0854fb3d70c2",
-        "sig": "e63fb2637aa405f5e6a2e16b7b6e5f0f813b3918a75441a70ffca4eeadf7378b50f9a9a4c752e55d32f8358047d23d73537ab4210a6be9f7444de50dae34926f"
+        "content": "---\ntype: \"Claim\"\ntopic: \"pypi:foo_bar\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "8b0510fad6436409627976e01c7f16ead685fd029d697dc853e44c564ec556b4",
+        "sig": "9c0d2186ac1314e6cbe874163f2aa4c7de8b118f729deefcdac2dbc60cd5332025e889e7a4108cc87e67059c2eb4767d973f2726dc3def585e97f8d0b31509bd"
       },
       "dns": {
         "api.github.com": [
@@ -2562,22 +2562,22 @@
       "description": "regex is not a check kind.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:c50a6ed111ba776b239ff7c1bbaba9fe"
+            "factmesh:c50a6ed111ba776b239ff7c1bbaba9fe"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2588,9 +2588,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"regex\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  expect: \"1\\\\..*\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "4e841a11915fbc31ea4174bcc74facc854f712af59d01dba49180a5ece76f46e",
-        "sig": "7a4589a6ab5db099507f46dfb79d5555fa3815806c3ca857dc58d76e2eeb094bef692d9df734b0571d3ff59b9f2ea79da1434ca1cc8632c0f92d26ac615ced00"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"regex\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  expect: \"1\\\\..*\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "29022cbf8a89ea3aa8e45cc535a87f5a56210b226f4ee652ef4b7d2701f1a3a7",
+        "sig": "fdb9fb77fc4632dc816cc764b453496a753daa16db3f0f82e8ce6b9192ae8dc264b74d11b6474d79b37d1c259ac941aec0808044193402f7cf8ac0a759944234"
       },
       "dns": {
         "api.github.com": [
@@ -2617,22 +2617,22 @@
       "description": "Check fields beyond those of its kind.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2643,9 +2643,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n  headers: {\"x\": \"y\"}\n---\nTest vector. Never shown to an agent.\n",
-        "id": "9fe5c9e010f89f39fd50b1926766bc98f49211d83ff7cf98b9b93ed3d6a4456e",
-        "sig": "674a7ce0d241b68a669cbebbcdc90993c275677d55c0e380fcbf8c6fd8e74806d62cd8f2610c528cc03348b14d1def3714218f709e4c872379372b47b7b7e855"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n  headers: {\"x\": \"y\"}\n---\nTest vector. Never shown to an agent.\n",
+        "id": "8bda13d6d8d23d8a1f59a5d4fb90a04826f7337dfa7cf402f15268a658f3c92d",
+        "sig": "e969cd2543747e9fa7c073c3a8ee51514731e97873178e06a881560c5105f5e98a1c3aa7fd8377b0b195000d603b8a253a1f59372f5df6e4258814ac77856645"
       },
       "dns": {
         "api.github.com": [
@@ -2672,22 +2672,22 @@
       "description": "text-contains expect under 8 characters.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:097c15a23f61c145f90f9459891817b5"
+            "factmesh:097c15a23f61c145f90f9459891817b5"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2698,9 +2698,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/psf/requests/releases\"\n  expect: \"v2\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "6641fbb0ba6cd1f9e26ea9dcd9a81df82f9bd997115080de6596407289dc6737",
-        "sig": "afe0cb0ca0b5b0925140d45e71871da04bda1fb59c595c84d9ded7e340597ab7a0f6ae3048740fe94bd4bc16a3bcd0cb55dc4d84981eaeaf55d13f0672d61f83"
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/psf/requests/releases\"\n  expect: \"v2\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "d695a4e38e303d6d02ad79f546ec70fae2c489c4eba1854f1a8d45707e1bd50d",
+        "sig": "847d8c52cc22a34f6e89bfd30e5040b7a1b69e75799836ebf65deaec37f14cd31a1393f5f3b76c3c7b0c96344ac35b4b96010138f05b27dec2cd3b6f6bf551c8"
       },
       "dns": {
         "api.github.com": [
@@ -2727,22 +2727,22 @@
       "description": "json-field-equals expect must be a scalar.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2753,9 +2753,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: {\"a\": 1}\n---\nTest vector. Never shown to an agent.\n",
-        "id": "c2802660713a49150fb87360d21dbb97276753ff3638885c2cc80a469f3d552f",
-        "sig": "076d2b9b3fefc2215f61cfe00b7e48e2a9027325f92216dcde5ce441743af3f6cbac5d8be0407ba9dd08667fcd2ec6ae5d00210fb3be1e3874065da61c0c68f8"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: {\"a\": 1}\n---\nTest vector. Never shown to an agent.\n",
+        "id": "fe6ba174232958cc0aaa59c4c569cbfd497498d7675e99691cbcb5d7f267e3ab",
+        "sig": "5db0bdd0fe7e75c57240cdcddde24c1255eb5bb846b2a3de455e42649b5e73c313d3c1db20f76373a78c2e09e66186d556271844e5384887637e67c1a91414cc"
       },
       "dns": {
         "api.github.com": [
@@ -2782,22 +2782,22 @@
       "description": "http-status expect outside 100-599.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:290eade53ca058eda1419375b076be82"
+            "factmesh:290eade53ca058eda1419375b076be82"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2808,9 +2808,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  expect: 999\n---\nTest vector. Never shown to an agent.\n",
-        "id": "cddcd465d8db5d7c9cb3b1df29000db2a7e243aad06beca48717867d640b6817",
-        "sig": "3216064d7e7a1d74d2532776ba710079a88ea6f2e7ec197e45e64515dfab8b047a5ff948faa30f2045e407471bcafa67896c374c98d2d927839136597e76ff5a"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  expect: 999\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5916f9bfa2857b3c7145804f76347a39df4f9e628ba47864e05030e077935cf5",
+        "sig": "46708bdbbe81f23229119420555b54f34250102497d73fafa57905ff0c7268ab1fb838540bc4ace05ef39d2099850b3715b8aa2f34ece745d6f6d7be7925ed7d"
       },
       "dns": {
         "api.github.com": [
@@ -2837,22 +2837,22 @@
       "description": "Plain http.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:64187659dcfbffd68a683dfff692d9a7"
+            "factmesh:64187659dcfbffd68a683dfff692d9a7"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2863,9 +2863,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"http://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "422ad7a1c7642d8b0475ad97e0aa5fef68e967e4ea7913ddc836e23d24a57789",
-        "sig": "b6a95de879b79e98f9e676a3e66fc8b06c002a5b4e159034846fbbcf166c091e6dee6c7ab88e8724314e9eb5750e706d654e5836e71dba6bc6c55f99f80497e9"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"http://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7fb84958b8db21c43bcfddc5637e0bb94f4f928ca5575faf75d442c7975f1fbc",
+        "sig": "fdb11cc6679c75e6714e81d178a88129347c6b2c373b46d8864135076b4693a6239ca3156627ee60b730ed855210fa18acb033113cc76771ff6f482238903fbe"
       },
       "dns": {
         "api.github.com": [
@@ -2892,22 +2892,22 @@
       "description": "Explicit port.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:681dbf9f94c7e98b6c609838073ec6fd"
+            "factmesh:681dbf9f94c7e98b6c609838073ec6fd"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2918,9 +2918,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org:8443/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "b0b5d0a099bb6887c6e0ea638c12cfdb0e0190fba4fadd7b7d603bd15a15e2b3",
-        "sig": "ca64c8dd3154fedb6c17e4c981992adaf1af408e670dcf146e2b6997ca2c500d803cea426302613f064a7074826087029df85e906427ba96c5ddbbeb02cc9b3f"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org:8443/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "8ce449d5e72a5b8e5546f6bc0f8f39ebd98fca17d250fb0b89f3f1683abbd2ad",
+        "sig": "6a4770d3469787bd6c25984067f8058d558e0adf82b49aa80240c3407f1b4a5d9c9c060f8667dd2ac893dfe67a8c7228325ebda46f852c7c584423017b06fc71"
       },
       "dns": {
         "api.github.com": [
@@ -2947,22 +2947,22 @@
       "description": "Query string.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:3ec007ceaafb6a5b3498b1136bfe6f7c"
+            "factmesh:3ec007ceaafb6a5b3498b1136bfe6f7c"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -2973,9 +2973,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags?x=1\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "43da2bef989c1e90361f757b98b5182e8f2aed9de28720673bf8708d4aaaa90b",
-        "sig": "ac9c12faddb60236acd28fe33a883ff0c6a4c20a35ee982b45b882e8a808b380344c3ea8542c5ba1098a7f8c5aa22bc7705ec013f41c8a4ad947471f7852969f"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags?x=1\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "29c5a3b074c6373515613d84ed33f73db4740ed475c5a2ee3a96b96a684fa93f",
+        "sig": "2642b4b2282f67b78d418d97163da5cf214e81f6748c9c0f9e8fb969e47c54c37f344ac68239f75c22159f005c1cc5e1e27ffa15001ea23d53094ed435344698"
       },
       "dns": {
         "api.github.com": [
@@ -3002,22 +3002,22 @@
       "description": "Fragment.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:bae9f87a41cdbfdbda98fdbb01b3836f"
+            "factmesh:bae9f87a41cdbfdbda98fdbb01b3836f"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3028,9 +3028,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags#latest\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "c6cb789df00f527a42152e87b08120805d23ad9cadc119de93f3f5f333450aff",
-        "sig": "3f4a129fd49c468032d57e2760a80ee7daa7cf70adf328b22f3b420839384abfd5a5ddf08c6642b8784422c9c046d7fb77c1800378d066720ec9dd62f320700f"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags#latest\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "00f43a1bf12c39b2ae37a5e5cc349e752c42b1ce73413f13842985721d267841",
+        "sig": "704880441759d4ee85dbd1038395aa22a70536169951e65cef1a8816a8822e9a8d02ef4cb863818b00da60e3eb7e328a401f0840da5e4aacb5aebb88d3dd40ab"
       },
       "dns": {
         "api.github.com": [
@@ -3057,22 +3057,22 @@
       "description": "Percent-encoding.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:4edf78ad0255ba49a1853db925f70dbe"
+            "factmesh:4edf78ad0255ba49a1853db925f70dbe"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3083,9 +3083,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left%2dpad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "ea5c7adf1e8883b6e8b96b23db3d9e699396b0fd7f6818503834b038aa752fac",
-        "sig": "e145ff4570a76d878d1e155a919f1376a17394167fc45f4bac337c512ea4f9846e37f4e6b52cdd4dc7c31d7d39ef2b822ea86286e0577fc981e26a3c9ca871ac"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left%2dpad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "db8bbe63a96667049d0ab57dd93dd7213fbbea50a4e20cc9c25cf0af74f66e10",
+        "sig": "821c7005107ec9afa35e36b6a0c52dee9dd283c2e48f6573817c50b033d767d1e43af603946768721275907763dda55f0b60433e0cb4de7f3c081aaade6d3ec5"
       },
       "dns": {
         "api.github.com": [
@@ -3112,22 +3112,22 @@
       "description": "User information.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:3136f451410c3b9572842ecbdbfb5206"
+            "factmesh:3136f451410c3b9572842ecbdbfb5206"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3138,9 +3138,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://user@registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "375a86b540d6a939627bbb628b2a104b48e44b7c00b2f12f790031b6ccc64024",
-        "sig": "a365d41f7506de9880ff5a33f3baeab600d400dbb099486349711e80485424561553bfce7193cdb70b18aa045794a1466339ec7173afc95c78684584eadee886"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://user@registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "28fa44c047a44c8b27acb0e067ffae578aa7718f7a69b98fec8ad1d28f01c19f",
+        "sig": "c7c0f77e1ab07bb3ec34142077908d92f9b77900def5e960c7676bfaf2c921a3d6c10541e5ff17373acb9b6aa5823a5ab009eb7007336aab4efca7ce70312db2"
       },
       "dns": {
         "api.github.com": [
@@ -3167,22 +3167,22 @@
       "description": "URL over 300 characters.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:29b2270ea3259932bb6809ab9f1ebaa3"
+            "factmesh:29b2270ea3259932bb6809ab9f1ebaa3"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3193,9 +3193,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "289b2fb777aca524328da49e15ef9a7f65b52ada84ba732453930a77a1b1677a",
-        "sig": "f1534c5200df6afaaa195ddcbfb33f62e85d130a21e2338cb2f633fd2c61d6b01806c2f2379cd2c64d7cd736c1f09e68c308ccb14b55e6ff0d4c3025c995f22e"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x/x\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "6b3b0c84017b95f147c40e6a3ef3b0b11dcc36e6f4a7d34725480ad4fd485fa2",
+        "sig": "0469bd72423e8b34600cad06231112809cb202dcd710ce7a3e967e84d9971e4a71c690cedd28b4b383395e4ad629a4ad97a00a6dc101a6e78aede894cadcb890"
       },
       "dns": {
         "api.github.com": [
@@ -3222,22 +3222,22 @@
       "description": "Host not on the allowlist.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:0d7dc0806a879e5da121d9ec808949ef"
+            "factmesh:0d7dc0806a879e5da121d9ec808949ef"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3248,9 +3248,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://example.com/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "2ff36775b36cf3585f1b6f5f938d55ffaf259eb07342d44dc085c3c797113a37",
-        "sig": "00a39aa9dd0c8f32d5e71f0f90cb73b1a4117b9e393fea447bfbbdf16e54a2753bdf05001db6490c8e201d8e0816dc60a874bb4f42daab17b96be6d9fab6bfd9"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://example.com/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "6810d78c11ac77f6906be46cfdc65d6f1d4d818b14243968d9a8b03ce28517ed",
+        "sig": "fcae5c4c2b68b1a832fb4f8b75e38d9344ebec49fe712617b63dec428b95aa1095c70ad1e8c68432f7475f3b349fd2a6839ebedcfd76c14f6aede8b801ffcc35"
       },
       "dns": {
         "api.github.com": [
@@ -3277,22 +3277,22 @@
       "description": "URL for a different package than the topic.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:32652e5fd94531c0e45e3925af4cb988"
+            "factmesh:32652e5fd94531c0e45e3925af4cb988"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3303,9 +3303,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/evil-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "9b514eab939b71ac58cd6d4c081b460f4fdb11d5a158cdc6613a850ca5c923f6",
-        "sig": "aca9ea8343a66c5015497982134c97947c21e747591e5e285b4bff18b77285fa0e8e438f136054e45286e71c63a27d6f721d26eb313df5fba279c891a41969d1"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/evil-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "1ab6b06d2f9cf9f51567929d3685635d262d122b5feedeee210e31360d6a1323",
+        "sig": "21f5b2dce3a0d415f8044e157a34d379e13f1158cd908c45e8036cb24f94615a63309be7e0fdb858d024d2074f09bfcf243bd14fb2dd649550ac169de84d129e"
       },
       "dns": {
         "api.github.com": [
@@ -3332,22 +3332,22 @@
       "description": "Path with a .. segment.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:7e265fa67a9c94c0fd850201435389bf"
+            "factmesh:7e265fa67a9c94c0fd850201435389bf"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3358,9 +3358,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/left-pad/../evil-pad\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "3e492c4b3875a1eaceba7b59ae56a0fa6c46fb63a007c6d2e9289bd0f81fd4a1",
-        "sig": "dbbe2bb0e3a6cd0f7a9e8bc7550bd46b7a443ae9fe33111907b70db244b22650bdf17a88c3b85892fe7f2fbb25bb6a4adfdbf7f7ec410973904e0a7cd1ae91a2"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/left-pad/../evil-pad\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "6d7262a35868f6f3b763845a07ddf123e009d5a27b7225ebb383a2fd9201ebdf",
+        "sig": "9e5d26781c98e96af01c124a56fe5caa9828e1e05e6148109d263da70bed27f3a68ac9534c8ddcbed46dc6062bb18f9b148262a06fa99d018fb0924c817d5189"
       },
       "dns": {
         "api.github.com": [
@@ -3387,22 +3387,22 @@
       "description": "github.com URL under an npm topic.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:dcd4aafb5e6514a0708d431dfef13496"
+            "factmesh:dcd4aafb5e6514a0708d431dfef13496"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3413,9 +3413,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://github.com/left-pad/left-pad/releases\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "1b1e78614041b890e576081ddcdcc171123ef1b5abbf64484c9d3c10b1d70348",
-        "sig": "f6e0c533614cbe266ddf79e959009d89a61696e141c002e3060b6ffc56fd3cdd3351cc86fb5a64a49512132ea08d72cff1916c340fdee905b94f91790c2ea54b"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://github.com/left-pad/left-pad/releases\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "12742d74becff499a0561250a6d8a32c9e55576d5f00ba7b5a4bf14b31cc4e0a",
+        "sig": "518beb01cfb580672ce5deb93ae180f06a78a302db69a6451b9e590148e0bc7ec0c62893c4d0721b2256cefef7bf0779f565dc3b0607904089a30d7dab1a6e0a"
       },
       "dns": {
         "api.github.com": [
@@ -3442,22 +3442,22 @@
       "description": "github.com URL for another repository.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:3071e2d1286c5c645a32606577000a38"
+            "factmesh:3071e2d1286c5c645a32606577000a38"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3468,9 +3468,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/pallets/flask/releases\"\n  expect: \"Release notes\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "f91dc4fb91f75f1a41b8aca466b1fca2af0fc19e4adfbe961979f4a89a886ce9",
-        "sig": "7f64cc727a58144ed744dc37f82bfcebc806dfd8ebbc66d4e2f35075389df78f9adf9b6eb41338d1236577e85906e0d33d6d91dcc29299b830ad095a3c82fc12"
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/pallets/flask/releases\"\n  expect: \"Release notes\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "b8becee59b3380a819cbb8feefee2d670700a48ae4fe81365eca9ef9fbd0d018",
+        "sig": "a2850aa088dea008a31b408387125c3ad1aee39f711c179371bccb400a10a4b3e841554cf8b364073a62fb1c65547b64c06e4b737f58782e625f7014d28acd2a"
       },
       "dns": {
         "api.github.com": [
@@ -3497,22 +3497,22 @@
       "description": "t tag differs from topic.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3523,9 +3523,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "319a469f9fa0fb0b6668e617396e346510fa7b765db960da35d248d084ac9919",
-        "sig": "1bf55dcc1cbd7a0cb9d264667ce672a106e99ea23588a3d16770d339f7c622ad731afec717fe111f5cc14fcdfd8752ea8781d45529064c37401fab48ad4c3539"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "97f52cc7a346e1ea13c0ba20010f6f0594832aa892f99c095df7425d69ab753c",
+        "sig": "70dd3640d60cbb56949945eeaca1170695d5dd65ecd3bb3ecc2933db03c0933a4e70a34c63b7a6cc6dbb742476b5f96d23d5f85e882ac66569d640b355bf38f9"
       },
       "dns": {
         "api.github.com": [
@@ -3552,22 +3552,22 @@
       "description": "expiration tag differs from stale_after.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3578,9 +3578,9 @@
             "1794823200"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "733d80df61c36a1dfee575978d19f81cf1c554d74ea35bb07d75ca0886933d08",
-        "sig": "52f6753b77b4b14e0fb47846e391232880c1eaa022502bc2826b67ed7b89f3a4a49c6d4649f81791d33e1a2bc93e891fcdcf762ee3d2f379bc558c84104d757d"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7d5e545547fcdaea0970795a20ae78c6ba85c636c48340352832bc50e5f85868",
+        "sig": "0ad9c6141ba4b5d3c989fa1c66ebd7a137bf16030dc6c273b0f4571e278c4cbf10a81003c2dd15a975a7ba95fdead234d36810c7ecd9e7522fbc87832aae46b7"
       },
       "dns": {
         "api.github.com": [
@@ -3607,22 +3607,22 @@
       "description": "d tag is not the claim key.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:00000000000000000000000000000000"
+            "factmesh:00000000000000000000000000000000"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3633,9 +3633,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "b5336af5a9d9f089071d99206567f343e158b0adfc795b08adeb734cc9210bf1",
-        "sig": "ab787d54635d7230d08d85348ad24b5f7b6d6c2d0b04ec6b0cd8aec13090ea9d74de5a36267fa3a55c5ca56dfd30f27139dcaa8df5a1f1abb6055bbd68ef74e1"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7cef54b7948a3afeb715e71cd1b3c891da5cf3326084ac8930d2775b1b60bf1d",
+        "sig": "fdd912ec0b5e4bc13c08015165ff13291dba5fdf39418fdf415cea78ef802ffa4d23168217166a7f494075a3db9f2ee6a8a2e0193132830401ccacf25323433f"
       },
       "dns": {
         "api.github.com": [
@@ -3662,22 +3662,22 @@
       "description": "A required tag appears twice.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3692,9 +3692,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "f6ffb818252c6c8d3b46c4913a9c6e4e2f1f1c22f63dce9cf513778e9ea207d8",
-        "sig": "274314ac07ae6269f41d75edeceeff1866255ada73e762ffe4f592477239b3e51396be1dd065a51d56d7df2a90b0b43d0ce6437a5981ab8f69f26543d4ce1ce5"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "9b080f9d9b3913d07be26db7460f559675e75676c4260fd10ac3c156c0a23a09",
+        "sig": "6c26302720db24fbf844e2ece2b31640c7fcb452f9d37291ba7d69f44b7d8d16305e0525a9c3d9b3dbc8e1e2977c4c8dd25e160ad809207060efd715798d3afd"
       },
       "dns": {
         "api.github.com": [
@@ -3721,22 +3721,22 @@
       "description": "created_at an hour after generated.at.",
       "now": "2026-11-14T12:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794654000,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3747,9 +3747,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "94a49dfb065e54751911cf1a5e42ea04cd60469eee381003548e490df29483cb",
-        "sig": "2201e36871678f688f85eb145f1d766b5410b323493f1c656b3d322154a6595e5fed6a01006ece8bb32cf4e862fcf8b48412478563e6ad4a171090872e9b6e11"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "67e165aff99c37b6d1f861149d4fba921860fed59d35937b32862c1400be52a6",
+        "sig": "ab57539c4be2f47cbbec2ff1988c1e5d3ebc1ea8c44bf18fa47df814f8e27372238765cea833e46513459ee0ad8427524b84e18f7370b0145f613d286f53cfc9"
       },
       "dns": {
         "api.github.com": [
@@ -3776,22 +3776,22 @@
       "description": "generated.at more than 300 s after now.",
       "now": "2026-11-14T09:50:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3802,9 +3802,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [
@@ -3831,22 +3831,22 @@
       "description": "now is at or after stale_after.",
       "now": "2026-11-15T10:00:00Z",
       "event": {
-        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "pubkey": "40bbc5977cd0505bc26d341a5d6ba4e7a95bfd85eac4a4e30b76de81f85ed76d",
         "created_at": 1794650400,
         "kind": 30078,
         "tags": [
           [
             "d",
-            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+            "factmesh:fba82e78a55e9bb437d3a3ad3a16da9d"
           ],
           [
             "L",
-            "afx"
+            "factmesh"
           ],
           [
             "l",
             "claim",
-            "afx"
+            "factmesh"
           ],
           [
             "t",
@@ -3857,9 +3857,9 @@
             "1794736800"
           ]
         ],
-        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
-        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
-        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"factmesh-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "5c0a5d87466c73cc116a5dc5241663fc3f405f7c31f260fdfc457f55c94f6d32",
+        "sig": "abdc256f21a685f973ff7a2121f8d6f3d1b0def7dd6db75bf88a91303c0d1bec56dfeb02c95281941cbcecb3a8102b84cf946e3828731aa390393e2352a8eabb"
       },
       "dns": {
         "api.github.com": [

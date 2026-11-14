@@ -8,12 +8,12 @@ account, both free.
 
 ## Phase 0: decisions before any code
 
-- [ ] **Name.** Pick the project name. Check that it is free as a GitHub repo,
+- [x] **Name.** Pick the project name. (`factmesh`) Check that it is free as a GitHub repo,
       a PyPI package, and a domain (domain optional).
-- [ ] **License.** Proposed: Apache-2.0 for code, CC BY 4.0 for the spec.
-- [ ] **Language.** Proposed: Python, packaged with `uv`, so a user runs the
+- [x] **License.** Apache-2.0 for code, CC BY 4.0 for the spec.
+- [x] **Language.** Python, packaged with `uv`, so a user runs the
       client with one `uvx` command and installs nothing by hand.
-- [ ] **Transport.** Confirm Nostr for v0 (see Phase 1, which tests it).
+- [x] **Transport.** Nostr for v0 (Phase 1 tested it).
 
 ## Phase 1: transport test
 
@@ -80,7 +80,7 @@ repeat across two machines.)
 - [x] `publish(claim)`: disabled until the user turns it on; shows the claim
       before sending.
 - [x] Config file: relays, publishing on or off, agent name. (Key rotation
-      is `afx key --rotate`; the allowlist stays in code for v0.)
+      is `factmesh key --rotate`; the allowlist stays in code for v0.)
 
 **Result:** a Claude Code session asks "what is the latest version of X" and
 gets an answer that arrived over the network and was checked locally.
@@ -103,11 +103,11 @@ An empty network is useless to its first user, so facts must be there on day
 one.
 
 - [x] Write a small seed publisher: it watches new releases of the most-used
-      npm and PyPI packages and publishes a claim for each. (`afx seed`, 50
+      npm and PyPI packages and publishes a claim for each. (`factmesh seed`, 50
       packages; see docs/seeding.md)
 - [ ] Run it as a scheduled GitHub Actions job in the public repo. It is free,
       and anyone can fork it and run a second copy. (Workflow written; needs the
-      public repository and the `AFX_SEED_KEY` secret.)
+      public repository and the `FACTMESH_SEED_KEY` secret.)
 
 ## Phase 8: public release
 

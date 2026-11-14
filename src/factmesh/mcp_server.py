@@ -18,7 +18,7 @@ from .relay import RelayHealth, RelayPool
 from .reputation import Reputation
 from .store import Store
 
-log = logging.getLogger("afx")
+log = logging.getLogger("factmesh")
 
 INSTRUCTIONS = f"""\
 Fresh facts about software packages and repositories (npm, PyPI, GitHub),
@@ -89,7 +89,7 @@ def build(app: App | None = None) -> MCPServer:
             holder["app"] = App()
         return holder["app"]
 
-    server = MCPServer("afx", instructions=INSTRUCTIONS, version=__version__)
+    server = MCPServer("factmesh", instructions=INSTRUCTIONS, version=__version__)
 
     @server.tool()
     async def lookup(topic: str) -> dict:

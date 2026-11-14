@@ -3,13 +3,13 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 
-from afx.check import Response
-from afx.claim import parse_claim
-from afx.event import Signer
-from afx.receiver import Receiver, newest_per_publisher
-from afx.relay import RelayHealth, RelayPool, topic_filter
-from afx.reputation import Reputation
-from afx.store import Store
+from factmesh.check import Response
+from factmesh.claim import parse_claim
+from factmesh.event import Signer
+from factmesh.receiver import Receiver, newest_per_publisher
+from factmesh.relay import RelayHealth, RelayPool, topic_filter
+from factmesh.reputation import Reputation
+from factmesh.store import Store
 
 from fake_relay import FakeRelay
 
@@ -289,7 +289,7 @@ def test_receiver_sets_aside_off_topic_events(tmp_path, health):
         mine = signed(Signer(), claim())
         stranger = Signer()
         other = stranger.sign({"created_at": mine["created_at"], "kind": 30078,
-                               "tags": [["d", "afx:x"], ["L", "afx"], ["l", "claim", "afx"],
+                               "tags": [["d", "factmesh:x"], ["L", "factmesh"], ["l", "claim", "factmesh"],
                                         ["t", "npm:react"]],
                                "content": "not a claim at all"})
         r.add(mine)

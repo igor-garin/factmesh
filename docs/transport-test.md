@@ -92,6 +92,9 @@ gate was three.
 
 ## Follow-up: label filter
 
+These tests used the working name `afx` as the label; the project is now
+`factmesh`.
+
 The spec (SPEC.md §5) queries with `#L` and `#t` together. Tested on the four
 relays that passed: primal, nostr.net, snort.social, oxtr.dev. Each returned
 the probe event for `{"kinds":[30078],"#L":["afx"],"#t":[<topic>]}` and nothing

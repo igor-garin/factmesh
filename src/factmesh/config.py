@@ -9,7 +9,7 @@ from . import __version__
 from .home import home, write_atomic
 from .relay import DEFAULT_RELAYS
 
-DEFAULT_TEXT = f'''# afx client settings.
+DEFAULT_TEXT = f'''# factmesh client settings.
 
 # Let your agent publish claims to the network. Off by default: with it off,
 # the agent can look up and verify facts but never sends anything.
@@ -20,7 +20,7 @@ relays = [
 {"".join(f'    "{r}",{chr(10)}' for r in DEFAULT_RELAYS)}]
 
 # How published claims name their author. Name the software, never a person.
-agent = "afx-mcp/{__version__}"
+agent = "factmesh-mcp/{__version__}"
 '''
 
 
@@ -29,7 +29,7 @@ class Config:
     path: Path
     publish: bool = False
     relays: list = field(default_factory=lambda: list(DEFAULT_RELAYS))
-    agent: str = f"afx-mcp/{__version__}"
+    agent: str = f"factmesh-mcp/{__version__}"
 
 
 def load(path: Path | None = None) -> Config:

@@ -4,14 +4,14 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 
-from afx import cli
-from afx.check import Response
-from afx.event import Signer
-from afx.receiver import Receiver
-from afx.relay import RelayHealth, RelayPool
-from afx.reputation import Reputation
-from afx.seed import load_targets, run_seed
-from afx.store import Store
+from factmesh import cli
+from factmesh.check import Response
+from factmesh.event import Signer
+from factmesh.receiver import Receiver
+from factmesh.relay import RelayHealth, RelayPool
+from factmesh.reputation import Reputation
+from factmesh.seed import load_targets, run_seed
+from factmesh.store import Store
 
 from fake_relay import FakeRelay
 
@@ -125,7 +125,7 @@ def test_seeded_claims_are_accepted_by_a_receiver(tmp_path, packages):
 
 
 def test_cli_key_env(tmp_path, packages, monkeypatch, capsys):
-    monkeypatch.setenv("AFX_HOME", str(tmp_path / "home"))
+    monkeypatch.setenv("FACTMESH_HOME", str(tmp_path / "home"))
     monkeypatch.setenv("SEED_KEY", "zz")
     assert cli.main(["seed", "--packages", str(packages), "--key-env", "SEED_KEY",
                      "--dry-run"]) == 2

@@ -132,7 +132,7 @@ def cmd_key(args):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog="afx", description=__doc__)
+    ap = argparse.ArgumentParser(prog="factmesh", description=__doc__)
     sub = ap.add_subparsers(required=True)
 
     p = sub.add_parser("check", help="validate a claim file (.md) or event (.json) "

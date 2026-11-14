@@ -6,8 +6,8 @@ must follow.
 
 The key words MUST, MUST NOT, SHOULD, and MAY are used as in RFC 2119.
 
-The protocol namespace is `afx` (placeholder until the project is named; see
-PLAN.md Phase 0). It appears in event tags (§5) and claim identifiers.
+The protocol namespace is `factmesh`. It appears in event tags (§5) and claim
+identifiers.
 
 ## 1. Overview
 
@@ -152,7 +152,7 @@ When running a check, the receiver:
   loopback, private, link-local, multicast, or otherwise not globally routable,
   and MUST connect to an address it checked;
 - MUST send no cookies and no credentials, and SHOULD send a user agent of the
-  form `afx-client/<version>`;
+  form `factmesh-client/<version>`;
 - for `json-field-equals` and `text-contains`, MAY follow up to 3 redirects,
   each of which MUST satisfy §4.2 and §4.3 again;
 - MUST stop after 10 seconds in total and after 8 MiB of response body.
@@ -179,9 +179,9 @@ A claim travels as a Nostr event (NIP-01):
 | `kind` | `30078` |
 | `content` | the claim file, exactly |
 | `created_at` | within 300 s of `generated.at` |
-| tag `d` | `afx:` + claim key (§5.1) |
-| tag `L` | `afx` |
-| tag `l` | `claim`, `afx` |
+| tag `d` | `factmesh:` + claim key (§5.1) |
+| tag `L` | `factmesh` |
+| tag `l` | `claim`, `factmesh` |
 | tag `t` | the topic |
 | tag `expiration` | `stale_after` as Unix seconds (NIP-40) |
 
@@ -191,7 +191,7 @@ ignored.
 Receivers query with a filter such as:
 
 ```json
-{ "kinds": [30078], "#L": ["afx"], "#t": ["npm:left-pad"] }
+{ "kinds": [30078], "#L": ["factmesh"], "#t": ["npm:left-pad"] }
 ```
 
 ### 5.1 Claim key

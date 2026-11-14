@@ -4,13 +4,13 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 
-from afx import cli, keys
-from afx.check import Response, is_public
-from afx.claim import parse_claim
-from afx.event import Signer
-from afx.reputation import Reputation
-from afx.store import Store
-from afx.validate import validate_event
+from factmesh import cli, keys
+from factmesh.check import Response, is_public
+from factmesh.claim import parse_claim
+from factmesh.event import Signer
+from factmesh.reputation import Reputation
+from factmesh.store import Store
+from factmesh.validate import validate_event
 
 GEN = datetime(2026, 11, 14, 10, tzinfo=timezone.utc)
 NOW = GEN + timedelta(hours=2)
@@ -38,8 +38,8 @@ class OneResponse:
 
 
 @pytest.fixture(autouse=True)
-def afx_home(tmp_path, monkeypatch):
-    monkeypatch.setenv("AFX_HOME", str(tmp_path / "home"))
+def factmesh_home(tmp_path, monkeypatch):
+    monkeypatch.setenv("FACTMESH_HOME", str(tmp_path / "home"))
     return tmp_path / "home"
 
 
@@ -59,9 +59,9 @@ def test_is_public(address, public):
     assert is_public(address) is public
 
 
-def test_key_created_private_and_stable(afx_home):
+def test_key_created_private_and_stable(factmesh_home):
     a = keys.load_signer()
-    mode = stat.S_IMODE((afx_home / "key").stat().st_mode)
+    mode = stat.S_IMODE((factmesh_home / "key").stat().st_mode)
     assert mode == 0o600
     assert keys.load_signer().pubkey == a.pubkey
     assert keys.rotate().pubkey != a.pubkey
