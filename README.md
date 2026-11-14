@@ -39,7 +39,9 @@ The agent calls `lookup("npm:@anthropic-ai/sdk")` and gets back:
 the claim.
 
 Any MCP host works: the server is `uvx factmesh mcp` over stdio. It needs
-[uv](https://docs.astral.sh/uv/).
+[uv](https://docs.astral.sh/uv/), which fetches a suitable Python (3.12 or
+3.13) if you don't have one. Python 3.14 waits on prebuilt packages of the
+signing library, `coincurve`.
 
 ### Tools
 

@@ -3,7 +3,7 @@ name = "factmesh"
 version = "0.1.0.dev0"
 description = "Fresh, checkable facts for AI agents, shared over an open network"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.14"
 license = "Apache-2.0"
 license-files = ["LICENSE"]
 keywords = ["ai-agents", "mcp", "nostr", "package-versions"]
@@ -11,6 +11,8 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development",
 ]
 dependencies = [
