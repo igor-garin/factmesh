@@ -4,6 +4,7 @@ show or rotate the key."""
 import argparse
 import asyncio
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -84,6 +85,40 @@ def cmd_lookup(args):
     return 0
 
 
+def cmd_seed(args):
+    from .event import Signer
+    from .seed import load_targets, run_seed
+    try:
+        targets = load_targets(args.packages)
+    except ValueError as e:
+        print(e, file=sys.stderr)
+        return 2
+    if args.key_env:
+        secret = os.environ.get(args.key_env, "").strip()
+        if len(secret) != 64:
+            print(f"{args.key_env} must hold a 64-character hex key", file=sys.stderr)
+            return 2
+        signer = Signer(bytes.fromhex(secret))
+    else:
+        signer = keys.load_signer()
+    report = asyncio.run(run_seed(targets, RelayPool(args.relay or None), signer, Fetcher(),
+                                  valid_hours=args.valid_hours,
+                                  refresh_hours=args.refresh_hours, dry_run=args.dry_run))
+    print(f"key {signer.pubkey}")
+    for topic, value in report.would_publish:
+        print(f"would publish  {topic} = {value}")
+    unconfirmed = 0
+    for topic, value, status in report.published:
+        ok = sum(s == "confirmed" for s in status.values())
+        unconfirmed += ok == 0
+        print(f"published      {topic} = {value}  ({ok}/{len(status)} relays)")
+    for topic, why in report.skipped:
+        print(f"skipped        {topic}: {why}")
+    print(f"{len(report.published)} published, {len(report.would_publish)} would publish, "
+          f"{len(report.fresh)} already current, {len(report.skipped)} skipped")
+    return 1 if unconfirmed else 0
+
+
 def cmd_mcp(args):
     from .mcp_server import main as serve
     serve()
@@ -120,6 +155,16 @@ def main(argv=None):
     p.add_argument("topic")
     p.add_argument("--relay", action="append", help="relay URL (repeatable)")
     p.set_defaults(func=cmd_lookup)
+
+    p = sub.add_parser("seed", help="publish latest-version claims for a package list")
+    p.add_argument("--packages", default="seed/packages.toml")
+    p.add_argument("--key-env", help="environment variable holding the signing key (hex)")
+    p.add_argument("--valid-hours", type=int, default=24)
+    p.add_argument("--refresh-hours", type=int, default=6,
+                   help="republish when the current claim expires within this many hours")
+    p.add_argument("--dry-run", action="store_true", help="show what would be published")
+    p.add_argument("--relay", action="append", help="relay URL (repeatable)")
+    p.set_defaults(func=cmd_seed)
 
     p = sub.add_parser("mcp", help="run the MCP server on stdio, for agents")
     p.set_defaults(func=cmd_mcp)

@@ -102,10 +102,12 @@ Results: [docs/hostile-tests.md](docs/hostile-tests.md).
 An empty network is useless to its first user, so facts must be there on day
 one.
 
-- [ ] Write a small seed publisher: it watches new releases of the most-used
-      npm and PyPI packages and publishes a claim for each.
+- [x] Write a small seed publisher: it watches new releases of the most-used
+      npm and PyPI packages and publishes a claim for each. (`afx seed`, 50
+      packages; see docs/seeding.md)
 - [ ] Run it as a scheduled GitHub Actions job in the public repo. It is free,
-      and anyone can fork it and run a second copy.
+      and anyone can fork it and run a second copy. (Workflow written; needs the
+      public repository and the `AFX_SEED_KEY` secret.)
 
 ## Phase 8: public release
 

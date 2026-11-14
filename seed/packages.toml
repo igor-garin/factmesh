@@ -1,0 +1,27 @@
+# Packages the seed publisher watches. Each run reads the current latest
+# version from the registry and publishes a claim when it is new or the last
+# claim is about to expire. Names as the registry spells them; PyPI names are
+# normalized (lowercase, `-` for `_` and `.`).
+
+npm = [
+    # Frameworks and runtimes
+    "react", "react-dom", "next", "vue", "svelte", "@angular/core", "express",
+    # Tooling
+    "typescript", "vite", "esbuild", "webpack", "eslint", "prettier", "vitest",
+    "jest", "tailwindcss",
+    # Libraries
+    "lodash", "axios", "zod", "@types/node", "@types/react",
+    # AI SDKs agents use
+    "openai", "@anthropic-ai/sdk", "@modelcontextprotocol/sdk", "ai",
+]
+
+pypi = [
+    # Web and data
+    "requests", "httpx", "django", "flask", "fastapi", "uvicorn", "pydantic",
+    "sqlalchemy", "numpy", "pandas", "scipy", "scikit-learn", "matplotlib",
+    "pillow", "boto3",
+    # Tooling
+    "pytest", "ruff", "mypy", "black", "uv",
+    # AI
+    "torch", "transformers", "openai", "anthropic", "mcp",
+]

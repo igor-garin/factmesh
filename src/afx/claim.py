@@ -262,3 +262,18 @@ def parse_claim(content):
     return Claim(topic=header["topic"], check=header["check"], generated_by=by,
                  generated_at=generated_at, stale_after=stale_after, status=status,
                  header=header, content=content)
+
+
+def claim_text(topic, kind, url, expect, pointer, hours, agent, now: datetime):
+    """Build a claim file. Values are written as JSON scalars, which YAML
+    reads back unchanged."""
+    z = lambda t: t.strftime("%Y-%m-%dT%H:%M:%SZ")
+    check = [f"  kind: {json.dumps(kind)}", f"  url: {json.dumps(url)}"]
+    if pointer is not None:
+        check.append(f"  pointer: {json.dumps(pointer)}")
+    check.append(f"  expect: {json.dumps(expect)}")
+    return ("---\ntype: Claim\n"
+            f"topic: {json.dumps(topic)}\n"
+            f"generated: {{ by: {json.dumps(agent)}, at: {z(now)} }}\n"
+            f"stale_after: {z(now + timedelta(hours=hours))}\n"
+            "check:\n" + "\n".join(check) + "\n---\n")

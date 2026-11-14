@@ -97,8 +97,36 @@ def run_check(topic, check, fetcher):
     Exceptions other than FetchError propagate, so a test harness can stop a
     receiver that makes a request it should not.
     """
-    url = check["url"]
-    follow = check["kind"] != "http-status"
+    got = fetch(topic, check["url"], check["kind"] != "http-status", fetcher)
+    if isinstance(got, CheckResult):
+        return got
+    resp, url = got
+    r = _compare(check, resp)
+    return CheckResult(r.result, r.detail, url)
+
+
+def observe_json(topic, url, pointer, fetcher):
+    """The current value at `pointer` in the JSON at `url`, fetched under the
+    same rules as a check. Returns (value, None) or (None, reason)."""
+    got = fetch(topic, url, True, fetcher)
+    if isinstance(got, CheckResult):
+        return None, got.detail
+    resp, _ = got
+    if resp.status != 200:
+        return None, f"status {resp.status}"
+    try:
+        value = _resolve_pointer(json.loads(resp.body.decode("utf-8")), pointer)
+    except (ValueError, KeyError, RecursionError, UnicodeDecodeError):
+        return None, "no value at pointer"
+    if isinstance(value, (dict, list)):
+        return None, "pointer refers to an object or array"
+    return value, None
+
+
+def fetch(topic, url, follow, fetcher):
+    """GET `url` under SPEC.md §4.4, following redirects inside the topic
+    binding if `follow`. Returns (Response, final url) or an error
+    CheckResult."""
     for hop in range(MAX_REDIRECTS + 1):
         host, _ = url_parts(url)
         try:
@@ -113,8 +141,7 @@ def run_check(topic, check, fetcher):
             return CheckResult("error", str(e), url)
 
         if not (follow and resp.status in REDIRECT_STATUSES):
-            r = _compare(check, resp)
-            return CheckResult(r.result, r.detail, url)
+            return resp, url
         if hop == MAX_REDIRECTS:
             return CheckResult("error", "too many redirects", url)
         location = resp.headers.get("location")
