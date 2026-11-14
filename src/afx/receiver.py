@@ -11,6 +11,7 @@ from .claim import Rejected
 from .relay import RelayPool, topic_filter
 from .reputation import Reputation
 from .store import Store
+from .event import well_formed
 from .validate import static_event
 
 MAX_CHECKS_PER_LOOKUP = 20
@@ -104,7 +105,12 @@ class Receiver:
             if ["t", topic] not in [t[:2] for t in tags if isinstance(t, list)]:
                 stats.off_topic += 1
                 continue
-            pubkey = ev.get("pubkey")
+            if not well_formed(ev):
+                # Before rate limiting: that keys on pubkey, which could be
+                # any JSON value here.
+                stats.rejected["bad-event"] = stats.rejected.get("bad-event", 0) + 1
+                continue
+            pubkey = ev["pubkey"]
             if not self.reputation.allow(pubkey, time.time()):
                 stats.rate_limited += 1
                 continue
@@ -175,7 +181,9 @@ class Receiver:
         tags = ev.get("tags") if isinstance(ev.get("tags"), list) else []
         if not {t[1] for t in tags if isinstance(t, list) and len(t) > 1 and t[0] == "t"} & set(topics):
             return None
-        pubkey = ev.get("pubkey")
+        if not well_formed(ev):
+            return "rejected"
+        pubkey = ev["pubkey"]
         if not self.reputation.allow(pubkey, time.time()):
             return None
         try:

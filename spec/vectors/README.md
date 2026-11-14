@@ -68,4 +68,4 @@ never use it to publish.
 | `fail` | 8 | wrong value, strict JSON types (string vs number, bool vs number), non-JSON body, missing pointer, pointer to an object, status other than 200, `http-status` not following redirects |
 | `error` | 4 | timeout, redirect outside the binding, private address, oversized body |
 | `retracted` | 1 | `status: deprecated` |
-| `rejected` | 45 | every reason code in §7, including repeated YAML keys, CRLF lines, deep nesting, and non-UTC times |
+| `rejected` | 49 | every reason code in §7, including malformed but correctly signed events, repeated YAML keys, CRLF lines, deep nesting, non-UTC times, and over-long URLs |

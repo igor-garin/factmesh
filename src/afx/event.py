@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import re
 import secrets
 import time
 
@@ -13,6 +14,28 @@ KIND = 30078
 NAMESPACE = "afx"
 LABEL = "claim"
 MAX_CLOCK_SKEW = 300
+
+
+_HEX64 = re.compile(r"[0-9a-f]{64}")
+_HEX128 = re.compile(r"[0-9a-f]{128}")
+
+
+def well_formed(ev):
+    """NIP-01 field types. Checked before anything does arithmetic or
+    comparison on the fields, since a validly signed event can still carry,
+    say, a string created_at."""
+    def is_int(v):
+        return isinstance(v, int) and not isinstance(v, bool)
+    tags = ev.get("tags")
+    return (isinstance(ev.get("id"), str) and _HEX64.fullmatch(ev["id"]) is not None
+            and isinstance(ev.get("pubkey"), str) and _HEX64.fullmatch(ev["pubkey"]) is not None
+            and isinstance(ev.get("sig"), str) and _HEX128.fullmatch(ev["sig"]) is not None
+            and is_int(ev.get("created_at")) and 0 <= ev["created_at"] < 2**40
+            and is_int(ev.get("kind"))
+            and isinstance(ev.get("content"), str)
+            and isinstance(tags, list)
+            and all(isinstance(t, list) and t and all(isinstance(x, str) for x in t)
+                    for t in tags))
 
 
 def event_id(ev):

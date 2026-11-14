@@ -79,6 +79,8 @@ def _compare(check, resp):
         doc = json.loads(text)
     except ValueError:
         return CheckResult("fail", "body is not JSON")
+    except RecursionError:
+        return CheckResult("fail", "JSON nested too deeply")
     try:
         value = _resolve_pointer(doc, check["pointer"])
     except KeyError:

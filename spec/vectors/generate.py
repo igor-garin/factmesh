@@ -297,6 +297,19 @@ def build():
     ev["content"] = ev["content"].replace("1.3.0", "1.3.1")
     rej("reject-content-changed", "Content changed after signing.", ev, "bad-signature")
 
+    ev = event(BASE)
+    ev["created_at"] = str(ev["created_at"])
+    rej("reject-string-created-at",
+        "Correctly signed, but created_at is a string.", sign(ev), "bad-event")
+
+    ev = event(BASE)
+    ev["tags"] = ev["tags"] + [[]]
+    rej("reject-empty-tag", "A tag that is an empty list.", sign(ev), "bad-event")
+
+    ev = event(BASE)
+    ev["pubkey"] = ev["pubkey"].upper()
+    rej("reject-uppercase-pubkey", "Pubkey must be lowercase hex.", ev, "bad-event")
+
     rej("reject-missing-label", "No L tag.", event(BASE, drop_tags=("L",)), "not-a-claim")
     rej("reject-unknown-version", "l tag of a version this client does not implement.",
         event(BASE, tag_overrides={"l": ["l", "claim/1", "afx"]}), "not-a-claim")
@@ -381,6 +394,8 @@ def build():
             "https://registry.npmjs.org/-/package/left%2dpad/dist-tags")
     bad_url("reject-userinfo", "User information.",
             "https://user@registry.npmjs.org/-/package/left-pad/dist-tags")
+    bad_url("reject-url-too-long", "URL over 300 characters.",
+            "https://registry.npmjs.org/-/package/left-pad/dist-tags" + "/x" * 130)
     bad_url("reject-host-not-allowed", "Host not on the allowlist.",
             "https://example.com/-/package/left-pad/dist-tags")
     bad_url("reject-topic-mismatch", "URL for a different package than the topic.",

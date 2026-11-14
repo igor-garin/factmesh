@@ -113,7 +113,17 @@ def test_store_retract_and_prune():
     assert store.retract(signer.claim_event(retraction, int(later.timestamp())), retraction)
     assert store.entries() == []
 
-    store.put(signer.claim_event(claim, int(GEN.timestamp())), claim, NOW)
+    assert not store.put(signer.claim_event(claim, int(GEN.timestamp())), claim, NOW), \
+        "the retracted event, replayed, must not come back"
+    assert store.entries() == []
+    assert store.prune(claim.stale_after) == 0, "tombstone outlives the claim"
+    assert store.prune(later + timedelta(days=7, seconds=300)) == 1
+
+
+def test_store_expired_claim_is_pruned():
+    store = Store()
+    claim = parse_claim(claim_text())
+    store.put(Signer().claim_event(claim, int(GEN.timestamp())), claim, NOW)
     assert store.prune(NOW) == 0
     assert store.prune(claim.stale_after) == 1
     assert store.entries() == []

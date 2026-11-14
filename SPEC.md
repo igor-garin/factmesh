@@ -115,6 +115,7 @@ MUST be rejected.
 
 A check `url` MUST:
 
+- be at most 300 characters long;
 - use the `https` scheme, with no port, user information, query, or fragment;
 - contain no `%` character (one spelling per resource);
 - have a host on the allowlist;
@@ -163,7 +164,8 @@ Running a check gives one of:
 - `pass`: the condition in §4.1 held.
 - `fail`: the response arrived and the condition did not hold (including a
   status other than 200 for a JSON or text check after redirects, a body that
-  is not JSON or not UTF-8, or a pointer that does not resolve).
+  is not JSON or not UTF-8, JSON nested too deeply to parse, or a pointer that
+  does not resolve).
 - `error`: no conclusion: network failure, timeout, size limit, a host that
   resolves to a non-public address (§4.4), or a redirect that breaks §4.2 or
   §4.3. An `error` MUST NOT count against the publisher.
@@ -211,6 +213,10 @@ per `d` tag).
 - To retract, a publisher sends an event with the same `d` tag and
   `status: deprecated`. A receiver drops that publisher's claim for that key
   and does not run the check.
+- A receiver MUST remember a retraction for 7 days and 300 s after its
+  `created_at`, and ignore any older event from that publisher for that key
+  that arrives in that time. Relays may still hold or replay the older event,
+  and every older event has expired by then.
 - A publisher can retract only its own claims. A false claim from someone else
   needs no retraction: its check fails.
 
@@ -222,21 +228,25 @@ The reason codes are used by the test vectors.
 | Step | Rejected with reason |
 |---|---|
 | 1. `kind` is 30078 | `wrong-kind` |
-| 2. `id` and `sig` are valid (NIP-01) | `bad-signature` |
-| 3. `L` and `l` tags present as in §5 | `not-a-claim` |
-| 4. `content` is at most 8192 bytes | `too-large` |
-| 5. header parses under §2.1 | `bad-header` |
-| 6. required fields present and well-formed, including the `stale_after` rules (§2.2) | `bad-field` |
-| 7. topic has a valid form (§3) | `bad-topic` |
-| 8. check is well-formed (§4.1) | `bad-check` |
-| 9. URL rules (§4.2) | `bad-url` |
-| 10. topic binding (§4.3) | `topic-mismatch` |
-| 11. `t`, `expiration`, and `d` tags match the claim (§5) | `tag-mismatch` |
-| 12. `created_at` within 300 s of `generated.at` | `bad-time` |
-| 13. `generated.at` no more than 300 s in the future | `bad-time` |
-| 14. now is before `stale_after` | `expired` |
-| 15. `status` is `deprecated` | result `retracted`, no check |
-| 16. run the check (§4) | result `pass`, `fail`, or `error` |
+| 2. fields have their NIP-01 types: `id` and `pubkey` 64 lowercase hex characters, `sig` 128, `created_at` an integer from 0 to 2^40, `content` a string, `tags` a list of non-empty lists of strings | `bad-event` |
+| 3. `id` and `sig` are valid (NIP-01) | `bad-signature` |
+| 4. `L` and `l` tags present as in §5 | `not-a-claim` |
+| 5. `content` is at most 8192 bytes | `too-large` |
+| 6. header parses under §2.1 | `bad-header` |
+| 7. required fields present and well-formed, including the `stale_after` rules (§2.2) | `bad-field` |
+| 8. topic has a valid form (§3) | `bad-topic` |
+| 9. check is well-formed (§4.1) | `bad-check` |
+| 10. URL rules (§4.2) | `bad-url` |
+| 11. topic binding (§4.3) | `topic-mismatch` |
+| 12. `t`, `expiration`, and `d` tags match the claim (§5) | `tag-mismatch` |
+| 13. `created_at` within 300 s of `generated.at` | `bad-time` |
+| 14. `generated.at` no more than 300 s in the future | `bad-time` |
+| 15. now is before `stale_after` | `expired` |
+| 16. `status` is `deprecated` | result `retracted`, no check |
+| 17. run the check (§4) | result `pass`, `fail`, or `error` |
+
+Step 2 comes before any comparison or arithmetic on event fields: a correctly
+signed event can still carry, for example, a string `created_at`.
 
 A rejected event MUST be dropped. A receiver MAY lower its trust in a publisher
 whose events are rejected or `fail`, but MUST NOT for `error`.
@@ -255,9 +265,12 @@ The receiver MUST NOT pass `title`, `tags`, `sources`, the body, the event's
 other tags, or the publisher key. Those are controlled by the publisher; the
 check result is not.
 
-Because `expect` in a passing `text-contains` check is text the publisher
-chose, receivers SHOULD present it to an agent as quoted data, never inline as
-prose.
+Some check fields are text the publisher chose and that a passing check does
+not constrain much: `expect` in a `text-contains` check, and the path of a
+URL whose `http-status` check expects 404 (any path on an allowlisted host
+can return 404). Receivers SHOULD present every check field to an agent as
+quoted data, never inline as prose. The 300-character URL limit (§4.2) and the
+200-character `expect` limit bound how much such text one claim carries.
 
 ## 9. Relays
 
@@ -270,7 +283,7 @@ These rules are informative except where MUST is used.
 - Receivers MUST enforce `stale_after` themselves; some relays ignore
   `expiration`.
 - Receivers MUST NOT rely on relay filtering. Some relays apply only part of
-  a filter and return events for other topics; §7 step 11 catches these, and
+  a filter and return events for other topics; §7 step 12 catches these, and
   a receiver SHOULD set them aside without counting them against the
   publisher.
 

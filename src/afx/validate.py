@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 from .check import run_check
 from .claim import Claim, Rejected, parse_claim
-from .event import KIND, MAX_CLOCK_SKEW, check_labels, check_tags, verify_signature
+from .event import KIND, MAX_CLOCK_SKEW, check_labels, check_tags, verify_signature, well_formed
 
 SKEW = timedelta(seconds=MAX_CLOCK_SKEW)
 
@@ -20,7 +20,7 @@ class Result:
 
 
 def _times(claim, now, created_at=None):
-    """Steps 12-14."""
+    """Steps 13-15."""
     if created_at is not None:
         gap = abs(created_at - claim.generated_at.timestamp())
         if gap > MAX_CLOCK_SKEW:
@@ -32,7 +32,7 @@ def _times(claim, now, created_at=None):
 
 
 def _finish(claim, fetcher):
-    """Steps 15-16."""
+    """Steps 16-17."""
     if claim.retracted:
         return Result("retracted", claim=claim)
     r = run_check(claim.topic, claim.check, fetcher)
@@ -40,17 +40,17 @@ def _finish(claim, fetcher):
 
 
 def static_event(ev, now: datetime) -> Claim:
-    """Steps 1-14 of SPEC.md §7: everything that needs no network.
+    """Steps 1-15 of SPEC.md §7: everything that needs no network.
     Raises Rejected."""
     if not isinstance(ev, dict):
         raise Rejected("wrong-kind", "event is not an object")
     if ev.get("kind") != KIND:
         raise Rejected("wrong-kind", str(ev.get("kind")))
+    if not well_formed(ev):
+        raise Rejected("bad-event", "fields do not have NIP-01 types")
     if not verify_signature(ev):
         raise Rejected("bad-signature")
     check_labels(ev)
-    if not isinstance(ev.get("content"), str):
-        raise Rejected("bad-header", "content is not a string")
     claim = parse_claim(ev["content"])
     check_tags(ev, claim)
     _times(claim, now, ev.get("created_at"))

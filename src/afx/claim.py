@@ -11,6 +11,7 @@ import yaml
 MAX_CONTENT_BYTES = 8192
 MAX_LIFETIME = timedelta(days=7)
 MAX_DEPTH = 4
+MAX_URL_LENGTH = 300
 ALLOWLIST = frozenset({"registry.npmjs.org", "pypi.org", "api.github.com", "github.com"})
 
 CHECK_FIELDS = {
@@ -200,6 +201,8 @@ def url_parts(url):
     Works on the string as written: no normalization, so `..` and encoded
     characters cannot slip past the binding rules.
     """
+    if len(url) > MAX_URL_LENGTH:
+        raise Rejected("bad-url", f"longer than {MAX_URL_LENGTH} characters")
     if not url.startswith("https://"):
         raise Rejected("bad-url", "scheme must be https")
     if any(c in url for c in "%?#") or any(c.isspace() for c in url):
@@ -247,7 +250,7 @@ def claim_key(check):
 
 
 def parse_claim(content):
-    """Parse and statically validate a claim file (SPEC.md §7 steps 4-10)."""
+    """Parse and statically validate a claim file (SPEC.md §7 steps 5-11)."""
     if len(content.encode()) > MAX_CONTENT_BYTES:
         raise Rejected("too-large", f"over {MAX_CONTENT_BYTES} bytes")
     header = parse_header(content)

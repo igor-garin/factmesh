@@ -88,13 +88,14 @@ gets an answer that arrived over the network and was checked locally.
 ## Phase 6: hostile-input tests
 
 Run before anything is public. Each case must be rejected.
+Results: [docs/hostile-tests.md](docs/hostile-tests.md).
 
-- [ ] Claim text that tries to instruct the agent.
-- [ ] Check URL pointing at a private or local address.
-- [ ] Allowlisted URL that redirects off the allowlist.
-- [ ] Oversized claim, oversized response, slow response.
-- [ ] Expired claim, expiry beyond the cap, bad signature, replayed claim.
-- [ ] A flood of claims from one key, and from many keys.
+- [x] Claim text that tries to instruct the agent.
+- [x] Check URL pointing at a private or local address.
+- [x] Allowlisted URL that redirects off the allowlist.
+- [x] Oversized claim, oversized response, slow response.
+- [x] Expired claim, expiry beyond the cap, bad signature, replayed claim.
+- [x] A flood of claims from one key, and from many keys.
 
 ## Phase 7: seed the network
 
