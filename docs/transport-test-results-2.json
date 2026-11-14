@@ -1,0 +1,291 @@
+{
+  "run_at": "2026-11-14T00:32:28Z",
+  "topic": "relaytest:7fcc9ffaf571",
+  "kinds": [
+    4242,
+    30078
+  ],
+  "results": [
+    {
+      "relay": "wss://relay.damus.io",
+      "nip11": {
+        "error": "HTTPError: HTTP Error 403: Forbidden"
+      },
+      "connect_error": "InvalidStatus: server rejected WebSocket connection: HTTP 521"
+    },
+    {
+      "relay": "wss://nos.lol",
+      "nip11": {
+        "supported_nips": [
+          1,
+          2,
+          4,
+          9,
+          11,
+          28,
+          40,
+          45,
+          70
+        ],
+        "limitation": {
+          "max_limit": 500,
+          "max_message_length": 131072,
+          "max_subscriptions": 200
+        },
+        "software": "git+https://github.com/hoytech/strfry.git",
+        "version": "1.1.3"
+      },
+      "publish_regular": {
+        "error": "TimeoutError: "
+      },
+      "publish_appdata": {
+        "error": "TimeoutError: "
+      },
+      "publish_short_expiry": [
+        false,
+        "invalid: event expired",
+        0.045
+      ],
+      "sizes": {
+        "1000": {
+          "error": "TimeoutError: "
+        }
+      },
+      "burst_accepted": 0,
+      "burst_rejections": [
+        "no reply for 20 events"
+      ],
+      "readback": {
+        "tag_filter_returned": 0,
+        "regular_found": false,
+        "appdata_found": false,
+        "second_tag_filter_works": false,
+        "short_expiry_present_before_expiry": false
+      },
+      "expiry": {
+        "short_expiry_present_after_expiry": false
+      }
+    },
+    {
+      "relay": "wss://nostr.mom",
+      "nip11": {
+        "supported_nips": [
+          1,
+          2,
+          4,
+          9,
+          11,
+          28,
+          40,
+          45,
+          70
+        ],
+        "limitation": {
+          "max_limit": 500,
+          "max_message_length": 131072,
+          "max_subscriptions": 200
+        },
+        "software": "git+https://github.com/hoytech/strfry.git",
+        "version": "1.1.3"
+      },
+      "publish_regular": {
+        "error": "TimeoutError: "
+      },
+      "publish_appdata": {
+        "error": "TimeoutError: "
+      },
+      "publish_short_expiry": [
+        false,
+        "invalid: event expired",
+        0.046
+      ],
+      "sizes": {
+        "1000": {
+          "error": "TimeoutError: "
+        }
+      },
+      "burst_accepted": 0,
+      "burst_rejections": [
+        "no reply for 20 events"
+      ],
+      "readback": {
+        "tag_filter_returned": 0,
+        "regular_found": false,
+        "appdata_found": false,
+        "second_tag_filter_works": false,
+        "short_expiry_present_before_expiry": false
+      },
+      "expiry": {
+        "short_expiry_present_after_expiry": false
+      }
+    },
+    {
+      "relay": "wss://relay.nostr.band",
+      "nip11": {
+        "error": "URLError: <urlopen error timed out>"
+      },
+      "connect_error": "TimeoutError: timed out during opening handshake"
+    },
+    {
+      "relay": "wss://relay.nostr.net",
+      "nip11": {
+        "error": "HTTPError: HTTP Error 403: Forbidden"
+      },
+      "publish_regular": [
+        true,
+        "",
+        0.071
+      ],
+      "publish_appdata": [
+        true,
+        "",
+        0.064
+      ],
+      "publish_short_expiry": [
+        true,
+        "",
+        0.047
+      ],
+      "sizes": {
+        "1000": [
+          true,
+          "",
+          0.044
+        ],
+        "16000": [
+          true,
+          "",
+          0.046
+        ],
+        "64000": [
+          true,
+          "",
+          0.327
+        ],
+        "128000": [
+          true,
+          "",
+          0.722
+        ],
+        "256000": [
+          true,
+          "",
+          1.949
+        ]
+      },
+      "burst_accepted": 20,
+      "burst_rejections": [],
+      "readback": {
+        "tag_filter_returned": 28,
+        "regular_found": true,
+        "appdata_found": true,
+        "second_tag_filter_works": true,
+        "short_expiry_present_before_expiry": true
+      },
+      "expiry": {
+        "short_expiry_present_after_expiry": false
+      }
+    },
+    {
+      "relay": "wss://nostr.oxtr.dev",
+      "nip11": {
+        "supported_nips": [
+          1,
+          2,
+          4,
+          9,
+          11,
+          22,
+          28,
+          40,
+          70,
+          77
+        ],
+        "limitation": {
+          "max_limit": 500,
+          "max_message_length": 131072,
+          "max_subscriptions": 40
+        },
+        "software": "git+https://github.com/hoytech/strfry.git",
+        "version": "1.0.4"
+      },
+      "publish_regular": [
+        true,
+        "",
+        0.06
+      ],
+      "publish_appdata": [
+        true,
+        "",
+        0.068
+      ],
+      "publish_short_expiry": [
+        true,
+        "",
+        0.047
+      ],
+      "sizes": {
+        "1000": [
+          true,
+          "",
+          0.049
+        ],
+        "16000": [
+          true,
+          "",
+          0.045
+        ],
+        "64000": [
+          true,
+          "",
+          0.122
+        ],
+        "128000": [
+          true,
+          "",
+          0.066
+        ],
+        "256000": [
+          true,
+          "",
+          0.107
+        ]
+      },
+      "burst_accepted": 7,
+      "burst_rejections": [
+        "rate limited"
+      ],
+      "readback": {
+        "tag_filter_returned": 15,
+        "regular_found": true,
+        "appdata_found": true,
+        "second_tag_filter_works": true,
+        "short_expiry_present_before_expiry": true
+      },
+      "expiry": {
+        "short_expiry_present_after_expiry": false
+      }
+    },
+    {
+      "relay": "wss://relay.nostr.bg",
+      "nip11": {
+        "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      "connect_error": "gaierror: [Errno 8] nodename nor servname provided, or not known"
+    },
+    {
+      "relay": "wss://nostr-pub.wellorder.net",
+      "nip11": {
+        "error": "TimeoutError: The read operation timed out"
+      },
+      "connect_error": "InvalidStatus: server rejected WebSocket connection: HTTP 503"
+    },
+    {
+      "relay": "wss://relay.0xchat.com",
+      "nip11": {
+        "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      "connect_error": "gaierror: [Errno 8] nodename nor servname provided, or not known"
+    }
+  ]
+}

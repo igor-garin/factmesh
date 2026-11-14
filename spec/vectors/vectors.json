@@ -1,0 +1,3263 @@
+{
+  "spec_version": "0",
+  "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+  "vectors": [
+    {
+      "name": "pass-npm-dist-tag",
+      "description": "npm latest dist-tag equals expect.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/left-pad/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"latest\":\"1.3.0\",\"next\":\"1.4.0-rc.1\"}"
+        }
+      ],
+      "expect": {
+        "result": "pass"
+      }
+    },
+    {
+      "name": "pass-pypi-version",
+      "description": "PyPI project version via JSON Pointer.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:0d032353ff0c819cf8c41bfdc068e943"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "pypi:requests"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"pypi:requests\"\ntitle: \"requests latest is 2.32.3\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://pypi.org/pypi/requests/json\"\n  pointer: \"/info/version\"\n  expect: \"2.32.3\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "e7c790ea1f3cab40a06df5f51fa938bb4ae2c84b404b5fd8b076897906494625",
+        "sig": "e47c07c34a4433a7766d6a0e10755031c52fe0368a0c8e3d96811e4f25b4ebc174af97e208cc7e0d697721d7bbbb4e82bbf1b2b8c19a9dd7abd6836e1fed3f18"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://pypi.org/pypi/requests/json",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"info\":{\"name\":\"requests\",\"version\":\"2.32.3\"}}"
+        }
+      ],
+      "expect": {
+        "result": "pass"
+      }
+    },
+    {
+      "name": "pass-npm-scoped",
+      "description": "Scoped npm name appears literally in topic and URL.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:15cd002b5f89f20931c8bbe6851c9c50"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:@types/node"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:@types/node\"\ntitle: \"@types/node latest\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/@types/node/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"22.10.1\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "d00ff2a111067df1fc13ca7c55c80766d8a56d41d5560c351f5c3f5227889563",
+        "sig": "2725958147cce56e7495bf5e6da56fcf6deaeb847e4d2b13256f65ab7fa5ca780d0843583f7fa880f122ad71d7602d94cc234303230c3815b35f7845a9c580ac"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/@types/node/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"latest\":\"22.10.1\"}"
+        }
+      ],
+      "expect": {
+        "result": "pass"
+      }
+    },
+    {
+      "name": "pass-http-status-404",
+      "description": "An endpoint that does not exist returns 404.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:294ed4a28f3582496f56202085208786"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "github:psf/requests"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"no v99 release\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://api.github.com/repos/psf/requests/releases/tags/v99.0.0\"\n  expect: 404\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7607ac00257ee994e86bdb79489235a32ce72159d78b8a3a8c420c9eada2e8ed",
+        "sig": "0e59c0fcd502bce8741ee23a564d7c7bcf073d08f50d60bac0729624c21f7ad222517de2c0867136e8953a3959262072e73c6fd485c2f804614735169aef497a"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://api.github.com/repos/psf/requests/releases/tags/v99.0.0",
+          "status": 404,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"message\":\"Not Found\"}"
+        }
+      ],
+      "expect": {
+        "result": "pass"
+      }
+    },
+    {
+      "name": "pass-text-contains",
+      "description": "Release page contains the expected sentence.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:01e61a867eb99d4d6febad8676ed5058"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "github:psf/requests"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"release page\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/psf/requests/releases/tag/v2.32.3\"\n  expect: \"Fix a regression in proxy handling\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "a5e0c2b9a277f10c4e22f77b4854f22aafbfb16823ccab57a816bc4cdf09eb61",
+        "sig": "420f1e7c6c2dcb923678d2b6eddb576e918c2fabfacbb929b13521a16313d793293fb100847bf9dc01f9deae9c95be3238eb84742e721921fb6338ee3743777f"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://github.com/psf/requests/releases/tag/v2.32.3",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html"
+          },
+          "body": "<html><body><h1>v2.32.3</h1><p>Fix a regression in proxy handling.</p></body></html>"
+        }
+      ],
+      "expect": {
+        "result": "pass"
+      }
+    },
+    {
+      "name": "pass-redirect-within-binding",
+      "description": "One redirect to another URL that satisfies the URL rules and binding.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:7edb016d850b59c2f8f812ba9921ec38"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/left-pad/latest\"\n  pointer: \"/version\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "75be9010812f28299700a1797e1643571b0f0f5f09881f18b0a43800351f8887",
+        "sig": "80d905d055972e2ff6a8cf93e88de5d7f2424056e2a5c684e6937b76181ce588f9b7d0f56ba664cf4bf957bdcca390c2138534ad0c90357beede80a378facb8b"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/left-pad/latest",
+          "status": 302,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "",
+          "location": "https://registry.npmjs.org/left-pad/1.3.0"
+        },
+        {
+          "url": "https://registry.npmjs.org/left-pad/1.3.0",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"name\":\"left-pad\",\"version\":\"1.3.0\"}"
+        }
+      ],
+      "expect": {
+        "result": "pass"
+      }
+    },
+    {
+      "name": "fail-npm-value-differs",
+      "description": "The registry reports a different version.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/left-pad/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"latest\":\"1.4.0\"}"
+        }
+      ],
+      "expect": {
+        "result": "fail"
+      }
+    },
+    {
+      "name": "fail-strict-type",
+      "description": "JSON equality is strict: \"1\" is not 1.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: 1\n---\nTest vector. Never shown to an agent.\n",
+        "id": "32903e665c92eb3bb6d697e5a4dadb8bb2c4e963392d53270acdb4ef21f6a415",
+        "sig": "dbed16b417c9001f2723e0fb2396551b3093765fe5417f9141b75f1f32c0cb89398d263bbb875c879e5359de2e79a088bf9a73467a9e5488e5d0aa863aa5edd9"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/left-pad/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"latest\":\"1\"}"
+        }
+      ],
+      "expect": {
+        "result": "fail"
+      }
+    },
+    {
+      "name": "fail-not-json",
+      "description": "A JSON check on a body that is not JSON fails.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/left-pad/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "text/html"
+          },
+          "body": "<html>maintenance</html>"
+        }
+      ],
+      "expect": {
+        "result": "fail"
+      }
+    },
+    {
+      "name": "fail-pointer-missing",
+      "description": "A pointer that does not resolve fails.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/left-pad/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"next\":\"1.4.0\"}"
+        }
+      ],
+      "expect": {
+        "result": "fail"
+      }
+    },
+    {
+      "name": "fail-pointer-to-object",
+      "description": "A pointer to an object never passes.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:29904813e7e8613bf38ca10f9e76b6ce"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "1decbcb34f60d994f6495ba54f296ccb60bf5bb28cabeaf23ed994a5a324e103",
+        "sig": "eb1c2278d712d146652eb81491516bfb52fcb0ac8950865fb629be1009b5eb74ef2d19c34346d90a882cb13c6c3c647db02f90ce4d6e70d6537f82877fa39970"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/left-pad/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "{\"latest\":\"1.3.0\"}"
+        }
+      ],
+      "expect": {
+        "result": "fail"
+      }
+    },
+    {
+      "name": "fail-http-status-no-redirect",
+      "description": "http-status does not follow redirects: a 301 is the result.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:90a924fe4bd7c54469c53db2c6c30e28"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "github:psf/requests"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://api.github.com/repos/psf/requests\"\n  expect: 200\n---\nTest vector. Never shown to an agent.\n",
+        "id": "ea99254eb438a206e1f44c3f13b239e7c33ab994aeaac9e9ba6022cdd6d2adb1",
+        "sig": "e3c09a124334b6ea33d6489cc1fcc8466561f54e14c3e7144f7ff0b4c76c2819d9714738d6c986dc662030aa70ca856aeca5de290c35ea5e1fe8d3de4603fa9f"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://api.github.com/repos/psf/requests",
+          "status": 301,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "",
+          "location": "https://api.github.com/repos/psf/requests2"
+        }
+      ],
+      "expect": {
+        "result": "fail"
+      }
+    },
+    {
+      "name": "error-timeout",
+      "description": "No response within 10 s: no conclusion.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/left-pad/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "",
+          "timeout": true
+        }
+      ],
+      "expect": {
+        "result": "error"
+      }
+    },
+    {
+      "name": "error-redirect-breaks-binding",
+      "description": "A redirect to a URL outside the topic binding gives error, not fail.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:b13ca0a2ef05f567d9c879599093cf4f"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "github:psf/requests"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://api.github.com/repos/psf/requests\"\n  pointer: \"/archived\"\n  expect: false\n---\nTest vector. Never shown to an agent.\n",
+        "id": "19453676fbd9fa40ccebd7cecb54f3d17976a91ebd2a7de092e6ff5fb22c294d",
+        "sig": "d57d1c0449a00308900981e9c76740e4ff2badef53884d21c096bd7207532f2197686632b1a8c33faa55b18515cb0ba49a9ef3189b395caf8fbef35b12578fdb"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://api.github.com/repos/psf/requests",
+          "status": 301,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "",
+          "location": "https://api.github.com/repositories/1362490"
+        }
+      ],
+      "expect": {
+        "result": "error"
+      }
+    },
+    {
+      "name": "error-private-address",
+      "description": "An allowlisted host that resolves to a private address is not contacted.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "registry.npmjs.org": [
+          "10.0.0.5"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "error"
+      }
+    },
+    {
+      "name": "error-body-too-large",
+      "description": "A body over 8 MiB gives error.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [
+        {
+          "url": "https://registry.npmjs.org/-/package/left-pad/dist-tags",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json"
+          },
+          "body": "",
+          "body_size": 9437184
+        }
+      ],
+      "expect": {
+        "result": "error"
+      }
+    },
+    {
+      "name": "retracted",
+      "description": "status: deprecated retracts without running the check.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"deprecated\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "bfc98b476759cf103c32e56c12475ba0b2af8496bd8fda462ef1d6d01bcdb87e",
+        "sig": "19490613c1ee68ec3c1e9009a02101c7d3f579cd8f55c525f94921051f8e73c232ee6824d0947e59babe4c9ca735fc675555ca9eedf88b6437fdc7ee416ac52b"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "retracted"
+      }
+    },
+    {
+      "name": "reject-wrong-kind",
+      "description": "Kind 1 is not a claim.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 1,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "3befa8387d92a0ae02145e959a1115d8494f9e4465a2b9c619d4ceafbbcf5715",
+        "sig": "cdbef8811772375e36387d2bc854ac25d018306aecd2acf6c6d0518a2197d29d683ad06dc2214f77a6acaf18c67ea2d315f0ad6cf2a7267c590eda9322968a7c"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "wrong-kind"
+      }
+    },
+    {
+      "name": "reject-bad-signature",
+      "description": "One signature character changed.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "16b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-signature"
+      }
+    },
+    {
+      "name": "reject-content-changed",
+      "description": "Content changed after signing.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.1\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.1\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-signature"
+      }
+    },
+    {
+      "name": "reject-missing-label",
+      "description": "No L tag.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "da410821f91e95244b2884269c02bdaf265eee57eccdc4209a21ba42ea75f2eb",
+        "sig": "f77257d13f6b28003be1b423ad9728ad3fef20d28888d74d4533aeecf54f9f83a74f6094343fd11ac1f1c15fe92c0b98286e288b0519143f6ab47b3cb4e565f4"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "not-a-claim"
+      }
+    },
+    {
+      "name": "reject-unknown-version",
+      "description": "l tag of a version this client does not implement.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim/1",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "23aaee98adbe3dce6aeb83700d16f27b8c5aaa0cfaaaff1874d0de480e0d4386",
+        "sig": "28d1af4d66dc3f861de68269e131406447395c47b04c16752256e95a79008b91b328a04e57aa0b23ada5ed8ce664c9d81dab0022cec95c2b122c17389ea7090f"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "not-a-claim"
+      }
+    },
+    {
+      "name": "reject-too-large",
+      "description": "Content over 8192 bytes.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "id": "e84b221f075e3e897f6d1d1509bdfa8d490e51c0243498f863a3f3463c7447a3",
+        "sig": "2b5545791fbcd476a398ebe405ab5c1d18faca53e78cbbe2c0b5baf034279d7205dc10b77994feedb97456420ebc98a953429eaf364d327743be5f537c6ace94"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "too-large"
+      }
+    },
+    {
+      "name": "reject-no-header",
+      "description": "Content does not start with ---.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "type: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\n",
+        "id": "333af6a2254ee53c4e175751e41aeb37ca6d9a05cc2e4045d9bd47df58568e0b",
+        "sig": "653b1db106e6ac557faa675e6ea25e92043b331b3e22ea88ac06deb3969980fbc3fcb3f3d56b6372ba18ffa921038e32300b96e58fc78d26918b184f2d2db9d1"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-header"
+      }
+    },
+    {
+      "name": "reject-yaml-alias",
+      "description": "YAML anchors and aliases are not allowed.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: &t npm left-pad\ntags: [*t]\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "38720dd7e98de37b232fc46782f90e1cc38d67d5eff113e57e51711a4b68e32d",
+        "sig": "9ed674ff6b790af687d20e20aa953c179d497d3482e79d657104a38a534a9130a9d870d5494f81bdd544e2bc43dce0df693edbb5a2a34639dd026b28d3204596"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-header"
+      }
+    },
+    {
+      "name": "reject-yaml-tag",
+      "description": "Explicit YAML type tags are not allowed.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: !!binary aGVsbG8=\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "92cacbf3c82fccfb18f84fbf252a459a101a816af45afaae1075b74ee4c030f3",
+        "sig": "b0444f566815792048b0b55f23c7b635a470f2d0bb6f8d69a0caef5c0e4a7c9b4ccf8582fb6aff03540fdb646e6df961f461bfeb5ff0df1c7b0376159cfd79d8"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-header"
+      }
+    },
+    {
+      "name": "reject-wrong-type",
+      "description": "type is not Claim.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Note\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "74f33c3238387a503f8ab337613692349fb3d8643ed5a6284b4ed76b3b8168e3",
+        "sig": "a6d3135a5efd22a2565e51ab464e849dacfb2916e9a7ecbb7ecb218920da803fcc0e87be0a1888227e0858e592de839199b0ac8ab0cac4eef1b831243d222c37"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-field"
+      }
+    },
+    {
+      "name": "reject-missing-stale-after",
+      "description": "stale_after is required.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "0afde029db89a316b897fa0403b86fd14979a36b17c863d17a28907ba1667f19",
+        "sig": "b4a32f8a8cb82d03f8786085a2604a9da256c7cdd70e0ed8019e37070669ee87e7c377de6a3f23b15811471fcce18374fdbae934a0605e00174e685d0f815c62"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-field"
+      }
+    },
+    {
+      "name": "reject-missing-generated-by",
+      "description": "generated.by is required.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "2f5ba01b014619c78625768a952fdaabe8c703b29d603c5571047801f7e69d1d",
+        "sig": "18b7d54a9aa86bc24a317f7eb5812edbaf9fbed8b2fe01e23e861c99ee4ba57ddb1566ed9c81212a06c777186c01ccefa904c8ec126cd8c28454519b0861a728"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-field"
+      }
+    },
+    {
+      "name": "reject-lifetime-over-7-days",
+      "description": "stale_after more than 7 days after generated.at.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1795255201"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-21T10:00:01Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "21ebfedb80dd2280a0db5a87440bdb6655b17b507de2e1df48b3a33b69399186",
+        "sig": "0ddc5306875b8ff2fbc7e74cfab7d717ccce7d2ddabaaafdf073437d4f978337fc102f43bc0666ad93df216a37c4e2dae7f85f24f34d4459b1f6408ef8003726"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-field"
+      }
+    },
+    {
+      "name": "reject-stale-before-generated",
+      "description": "stale_after not after generated.at.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794650400"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-14T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "506f8372fafae99ecf4760e3430f3b02a3c54c6386f989d845e0b364f12f5888",
+        "sig": "1d8673ced1facce173b26aa5230a563d85242d9fb850c57eb4bc3857c2cf27d7e72bf837bd79de56d24713ae4f358b68176687aba1ad269a5bb033dbc1a1a8ea"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-field"
+      }
+    },
+    {
+      "name": "reject-unknown-topic-prefix",
+      "description": "maven: is not a v0 topic.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "maven:junit"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"maven:junit\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "01f9bc98d0aec7620114bdd9e7d474eb089f163eef1b2bdbad55208c653470b2",
+        "sig": "446981989b97e7013bbbd1aaf09cce02ad37362df5ccc1c02a944c4ce4a855c2bfb93be060e01e4dcd3b5da4619211102f9ff212d613c18ae8fcea4651bf3458"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-topic"
+      }
+    },
+    {
+      "name": "reject-topic-uppercase",
+      "description": "Topics are lowercase.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:Left-Pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:Left-Pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "726b5e1e11b53cb1818ea1265ac8a1212b41e16f55863cae7e870e29b9f157f6",
+        "sig": "83cad92d104f0d8dd36fa335b7c40761bd0e4937d8107bdb66b9ae0c738e28a3a5f610e255051bb08e643f6f5b420a918a7b15276e744208603c52f051eb40e2"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-topic"
+      }
+    },
+    {
+      "name": "reject-pypi-not-normalized",
+      "description": "PyPI names must be PEP 503 normalized.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "pypi:foo_bar"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"pypi:foo_bar\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "c129452cfacb55a026fdcf35dd45b787c206bcb8c9cf5e57ea4a0854fb3d70c2",
+        "sig": "e63fb2637aa405f5e6a2e16b7b6e5f0f813b3918a75441a70ffca4eeadf7378b50f9a9a4c752e55d32f8358047d23d73537ab4210a6be9f7444de50dae34926f"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-topic"
+      }
+    },
+    {
+      "name": "reject-unknown-check-kind",
+      "description": "regex is not a check kind.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:c50a6ed111ba776b239ff7c1bbaba9fe"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"regex\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  expect: \"1\\\\..*\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "4e841a11915fbc31ea4174bcc74facc854f712af59d01dba49180a5ece76f46e",
+        "sig": "7a4589a6ab5db099507f46dfb79d5555fa3815806c3ca857dc58d76e2eeb094bef692d9df734b0571d3ff59b9f2ea79da1434ca1cc8632c0f92d26ac615ced00"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-check"
+      }
+    },
+    {
+      "name": "reject-extra-check-field",
+      "description": "Check fields beyond those of its kind.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n  headers: {\"x\": \"y\"}\n---\nTest vector. Never shown to an agent.\n",
+        "id": "9fe5c9e010f89f39fd50b1926766bc98f49211d83ff7cf98b9b93ed3d6a4456e",
+        "sig": "674a7ce0d241b68a669cbebbcdc90993c275677d55c0e380fcbf8c6fd8e74806d62cd8f2610c528cc03348b14d1def3714218f709e4c872379372b47b7b7e855"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-check"
+      }
+    },
+    {
+      "name": "reject-text-expect-too-short",
+      "description": "text-contains expect under 8 characters.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:097c15a23f61c145f90f9459891817b5"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "github:psf/requests"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/psf/requests/releases\"\n  expect: \"v2\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "6641fbb0ba6cd1f9e26ea9dcd9a81df82f9bd997115080de6596407289dc6737",
+        "sig": "afe0cb0ca0b5b0925140d45e71871da04bda1fb59c595c84d9ded7e340597ab7a0f6ae3048740fe94bd4bc16a3bcd0cb55dc4d84981eaeaf55d13f0672d61f83"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-check"
+      }
+    },
+    {
+      "name": "reject-json-expect-object",
+      "description": "json-field-equals expect must be a scalar.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: {\"a\": 1}\n---\nTest vector. Never shown to an agent.\n",
+        "id": "c2802660713a49150fb87360d21dbb97276753ff3638885c2cc80a469f3d552f",
+        "sig": "076d2b9b3fefc2215f61cfe00b7e48e2a9027325f92216dcde5ce441743af3f6cbac5d8be0407ba9dd08667fcd2ec6ae5d00210fb3be1e3874065da61c0c68f8"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-check"
+      }
+    },
+    {
+      "name": "reject-status-out-of-range",
+      "description": "http-status expect outside 100-599.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:290eade53ca058eda1419375b076be82"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"http-status\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  expect: 999\n---\nTest vector. Never shown to an agent.\n",
+        "id": "cddcd465d8db5d7c9cb3b1df29000db2a7e243aad06beca48717867d640b6817",
+        "sig": "3216064d7e7a1d74d2532776ba710079a88ea6f2e7ec197e45e64515dfab8b047a5ff948faa30f2045e407471bcafa67896c374c98d2d927839136597e76ff5a"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-check"
+      }
+    },
+    {
+      "name": "reject-http-scheme",
+      "description": "Plain http.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:64187659dcfbffd68a683dfff692d9a7"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"http://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "422ad7a1c7642d8b0475ad97e0aa5fef68e967e4ea7913ddc836e23d24a57789",
+        "sig": "b6a95de879b79e98f9e676a3e66fc8b06c002a5b4e159034846fbbcf166c091e6dee6c7ab88e8724314e9eb5750e706d654e5836e71dba6bc6c55f99f80497e9"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-url"
+      }
+    },
+    {
+      "name": "reject-port",
+      "description": "Explicit port.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:681dbf9f94c7e98b6c609838073ec6fd"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org:8443/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "b0b5d0a099bb6887c6e0ea638c12cfdb0e0190fba4fadd7b7d603bd15a15e2b3",
+        "sig": "ca64c8dd3154fedb6c17e4c981992adaf1af408e670dcf146e2b6997ca2c500d803cea426302613f064a7074826087029df85e906427ba96c5ddbbeb02cc9b3f"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-url"
+      }
+    },
+    {
+      "name": "reject-query",
+      "description": "Query string.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:3ec007ceaafb6a5b3498b1136bfe6f7c"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags?x=1\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "43da2bef989c1e90361f757b98b5182e8f2aed9de28720673bf8708d4aaaa90b",
+        "sig": "ac9c12faddb60236acd28fe33a883ff0c6a4c20a35ee982b45b882e8a808b380344c3ea8542c5ba1098a7f8c5aa22bc7705ec013f41c8a4ad947471f7852969f"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-url"
+      }
+    },
+    {
+      "name": "reject-fragment",
+      "description": "Fragment.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:bae9f87a41cdbfdbda98fdbb01b3836f"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags#latest\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "c6cb789df00f527a42152e87b08120805d23ad9cadc119de93f3f5f333450aff",
+        "sig": "3f4a129fd49c468032d57e2760a80ee7daa7cf70adf328b22f3b420839384abfd5a5ddf08c6642b8784422c9c046d7fb77c1800378d066720ec9dd62f320700f"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-url"
+      }
+    },
+    {
+      "name": "reject-percent",
+      "description": "Percent-encoding.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:4edf78ad0255ba49a1853db925f70dbe"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left%2dpad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "ea5c7adf1e8883b6e8b96b23db3d9e699396b0fd7f6818503834b038aa752fac",
+        "sig": "e145ff4570a76d878d1e155a919f1376a17394167fc45f4bac337c512ea4f9846e37f4e6b52cdd4dc7c31d7d39ef2b822ea86286e0577fc981e26a3c9ca871ac"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-url"
+      }
+    },
+    {
+      "name": "reject-userinfo",
+      "description": "User information.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:3136f451410c3b9572842ecbdbfb5206"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://user@registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "375a86b540d6a939627bbb628b2a104b48e44b7c00b2f12f790031b6ccc64024",
+        "sig": "a365d41f7506de9880ff5a33f3baeab600d400dbb099486349711e80485424561553bfce7193cdb70b18aa045794a1466339ec7173afc95c78684584eadee886"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-url"
+      }
+    },
+    {
+      "name": "reject-host-not-allowed",
+      "description": "Host not on the allowlist.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:0d7dc0806a879e5da121d9ec808949ef"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://example.com/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "2ff36775b36cf3585f1b6f5f938d55ffaf259eb07342d44dc085c3c797113a37",
+        "sig": "00a39aa9dd0c8f32d5e71f0f90cb73b1a4117b9e393fea447bfbbdf16e54a2753bdf05001db6490c8e201d8e0816dc60a874bb4f42daab17b96be6d9fab6bfd9"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-url"
+      }
+    },
+    {
+      "name": "reject-topic-mismatch",
+      "description": "URL for a different package than the topic.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:32652e5fd94531c0e45e3925af4cb988"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/evil-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "9b514eab939b71ac58cd6d4c081b460f4fdb11d5a158cdc6613a850ca5c923f6",
+        "sig": "aca9ea8343a66c5015497982134c97947c21e747591e5e285b4bff18b77285fa0e8e438f136054e45286e71c63a27d6f721d26eb313df5fba279c891a41969d1"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "topic-mismatch"
+      }
+    },
+    {
+      "name": "reject-dot-segment",
+      "description": "Path with a .. segment.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:7e265fa67a9c94c0fd850201435389bf"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/left-pad/../evil-pad\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "3e492c4b3875a1eaceba7b59ae56a0fa6c46fb63a007c6d2e9289bd0f81fd4a1",
+        "sig": "dbbe2bb0e3a6cd0f7a9e8bc7550bd46b7a443ae9fe33111907b70db244b22650bdf17a88c3b85892fe7f2fbb25bb6a4adfdbf7f7ec410973904e0a7cd1ae91a2"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "topic-mismatch"
+      }
+    },
+    {
+      "name": "reject-wrong-host-for-topic",
+      "description": "github.com URL under an npm topic.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:dcd4aafb5e6514a0708d431dfef13496"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://github.com/left-pad/left-pad/releases\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "1b1e78614041b890e576081ddcdcc171123ef1b5abbf64484c9d3c10b1d70348",
+        "sig": "f6e0c533614cbe266ddf79e959009d89a61696e141c002e3060b6ffc56fd3cdd3351cc86fb5a64a49512132ea08d72cff1916c340fdee905b94f91790c2ea54b"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "topic-mismatch"
+      }
+    },
+    {
+      "name": "reject-github-other-repo",
+      "description": "github.com URL for another repository.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:3071e2d1286c5c645a32606577000a38"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "github:psf/requests"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"github:psf/requests\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"text-contains\"\n  url: \"https://github.com/pallets/flask/releases\"\n  expect: \"Release notes\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "f91dc4fb91f75f1a41b8aca466b1fca2af0fc19e4adfbe961979f4a89a886ce9",
+        "sig": "7f64cc727a58144ed744dc37f82bfcebc806dfd8ebbc66d4e2f35075389df78f9adf9b6eb41338d1236577e85906e0d33d6d91dcc29299b830ad095a3c82fc12"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "topic-mismatch"
+      }
+    },
+    {
+      "name": "reject-t-tag-mismatch",
+      "description": "t tag differs from topic.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:react"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "319a469f9fa0fb0b6668e617396e346510fa7b765db960da35d248d084ac9919",
+        "sig": "1bf55dcc1cbd7a0cb9d264667ce672a106e99ea23588a3d16770d339f7c622ad731afec717fe111f5cc14fcdfd8752ea8781d45529064c37401fab48ad4c3539"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "tag-mismatch"
+      }
+    },
+    {
+      "name": "reject-expiration-mismatch",
+      "description": "expiration tag differs from stale_after.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794823200"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "733d80df61c36a1dfee575978d19f81cf1c554d74ea35bb07d75ca0886933d08",
+        "sig": "52f6753b77b4b14e0fb47846e391232880c1eaa022502bc2826b67ed7b89f3a4a49c6d4649f81791d33e1a2bc93e891fcdcf762ee3d2f379bc558c84104d757d"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "tag-mismatch"
+      }
+    },
+    {
+      "name": "reject-d-tag-mismatch",
+      "description": "d tag is not the claim key.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:00000000000000000000000000000000"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "b5336af5a9d9f089071d99206567f343e158b0adfc795b08adeb734cc9210bf1",
+        "sig": "ab787d54635d7230d08d85348ad24b5f7b6d6c2d0b04ec6b0cd8aec13090ea9d74de5a36267fa3a55c5ca56dfd30f27139dcaa8df5a1f1abb6055bbd68ef74e1"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "tag-mismatch"
+      }
+    },
+    {
+      "name": "reject-duplicate-t-tag",
+      "description": "A required tag appears twice.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "t",
+            "npm:react"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "f6ffb818252c6c8d3b46c4913a9c6e4e2f1f1c22f63dce9cf513778e9ea207d8",
+        "sig": "274314ac07ae6269f41d75edeceeff1866255ada73e762ffe4f592477239b3e51396be1dd065a51d56d7df2a90b0b43d0ce6437a5981ab8f69f26543d4ce1ce5"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "tag-mismatch"
+      }
+    },
+    {
+      "name": "reject-created-far-from-generated",
+      "description": "created_at an hour after generated.at.",
+      "now": "2026-11-14T12:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794654000,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "94a49dfb065e54751911cf1a5e42ea04cd60469eee381003548e490df29483cb",
+        "sig": "2201e36871678f688f85eb145f1d766b5410b323493f1c656b3d322154a6595e5fed6a01006ece8bb32cf4e862fcf8b48412478563e6ad4a171090872e9b6e11"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-time"
+      }
+    },
+    {
+      "name": "reject-generated-in-future",
+      "description": "generated.at more than 300 s after now.",
+      "now": "2026-11-14T09:50:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "bad-time"
+      }
+    },
+    {
+      "name": "reject-expired",
+      "description": "now is at or after stale_after.",
+      "now": "2026-11-15T10:00:00Z",
+      "event": {
+        "pubkey": "3c9db3670dfd85836161b5558c3e3f90d806de9abf5df3deb44308ea08adcfa3",
+        "created_at": 1794650400,
+        "kind": 30078,
+        "tags": [
+          [
+            "d",
+            "afx:fba82e78a55e9bb437d3a3ad3a16da9d"
+          ],
+          [
+            "L",
+            "afx"
+          ],
+          [
+            "l",
+            "claim",
+            "afx"
+          ],
+          [
+            "t",
+            "npm:left-pad"
+          ],
+          [
+            "expiration",
+            "1794736800"
+          ]
+        ],
+        "content": "---\ntype: \"Claim\"\ntopic: \"npm:left-pad\"\ntitle: \"npm left-pad latest is 1.3.0\"\nstatus: \"stable\"\ngenerated: { by: \"afx-vectors/0\", at: 2026-11-14T10:00:00Z }\nstale_after: 2026-11-15T10:00:00Z\ncheck:\n  kind: \"json-field-equals\"\n  url: \"https://registry.npmjs.org/-/package/left-pad/dist-tags\"\n  pointer: \"/latest\"\n  expect: \"1.3.0\"\n---\nTest vector. Never shown to an agent.\n",
+        "id": "7a094a97ad9c7ec480507cabe5f87c0299c8fcafe72eded789a52ac58d7cab17",
+        "sig": "06b706205601479aa8310f430301cfbac046c4e9b6e0716420801682881b2b778c9dc658eaaef7ad5544fe89b4d1dc678c678ee315a8ec3b6feafe7533d0db87"
+      },
+      "dns": {
+        "api.github.com": [
+          "104.16.0.35"
+        ],
+        "github.com": [
+          "104.16.0.35"
+        ],
+        "pypi.org": [
+          "104.16.0.35"
+        ],
+        "registry.npmjs.org": [
+          "104.16.0.35"
+        ]
+      },
+      "http": [],
+      "expect": {
+        "result": "rejected",
+        "reason": "expired"
+      }
+    }
+  ]
+}
