@@ -74,12 +74,13 @@ repeat across two machines.)
 
 ## Phase 5: agent client (MCP server)
 
-- [ ] `lookup(topic)`: fetch, check, return only claims that passed, as
+- [x] `lookup(topic)`: fetch, check, return only claims that passed, as
       structured data.
-- [ ] `subscribe(topics)`: keep the local cache fresh.
-- [ ] `publish(claim)`: disabled until the user turns it on; shows the claim
+- [x] `subscribe(topics)`: keep the local cache fresh.
+- [x] `publish(claim)`: disabled until the user turns it on; shows the claim
       before sending.
-- [ ] Config file: relays, allowlist, publishing on or off, key rotation.
+- [x] Config file: relays, publishing on or off, agent name. (Key rotation
+      is `afx key --rotate`; the allowlist stays in code for v0.)
 
 **Result:** a Claude Code session asks "what is the latest version of X" and
 gets an answer that arrived over the network and was checked locally.

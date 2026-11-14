@@ -15,6 +15,7 @@ from .validate import static_event
 
 MAX_CHECKS_PER_LOOKUP = 20
 CHECK_CONCURRENCY = 4
+FOLLOW_CHECK_CACHE_SECONDS = 600
 
 
 @dataclass
@@ -83,6 +84,7 @@ class Receiver:
         self.reputation = reputation
         self.fetcher = fetcher
         self.max_checks = max_checks
+        self._recent_checks = {}       # check id -> (CheckResult, monotonic time)
 
     async def lookup(self, topic, now: datetime | None = None):
         """Fetch claims for `topic` from relays, verify them, and return
@@ -161,3 +163,42 @@ class Receiver:
         self.reputation.save()
         self.store.prune(now)
         return facts(self.store, topic, now), stats
+
+    async def ingest(self, ev, topics, now: datetime | None = None):
+        """Handle one live event from a subscription. Returns the result
+        string, or None if the event was set aside or rate-limited.
+
+        Results of identical checks are reused for FOLLOW_CHECK_CACHE_SECONDS,
+        so a burst of copies of one claim costs one request.
+        """
+        now = now or datetime.now(timezone.utc)
+        tags = ev.get("tags") if isinstance(ev.get("tags"), list) else []
+        if not {t[1] for t in tags if isinstance(t, list) and len(t) > 1 and t[0] == "t"} & set(topics):
+            return None
+        pubkey = ev.get("pubkey")
+        if not self.reputation.allow(pubkey, time.time()):
+            return None
+        try:
+            claim = static_event(ev, now)
+        except Rejected as e:
+            if e.reason != "bad-signature":
+                self.reputation.record(pubkey, "rejected")
+            return "rejected"
+        if claim.retracted:
+            self.store.retract(ev, claim)
+            self.reputation.record(pubkey, "retracted")
+            return "retracted"
+
+        cid = _check_id(claim.check)
+        cached = self._recent_checks.get(cid)
+        if cached and time.monotonic() - cached[1] < FOLLOW_CHECK_CACHE_SECONDS:
+            r = cached[0]
+        else:
+            r = await asyncio.to_thread(run_check, claim.topic, claim.check, self.fetcher)
+            if r.result != "error":
+                self._recent_checks[cid] = (r, time.monotonic())
+        self.reputation.record(pubkey, r.result)
+        if r.result == "pass":
+            self.store.put(ev, claim, now)
+        self.reputation.save()
+        return r.result

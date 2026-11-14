@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "afx": {
+      "command": "uv",
+      "args": ["run", "afx", "mcp"]
+    }
+  }
+}

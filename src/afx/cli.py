@@ -1,4 +1,5 @@
-"""Command line: check, sign, publish, and look up claims; show or rotate the key."""
+"""Command line: check, sign, publish, and look up claims; run the MCP server;
+show or rotate the key."""
 
 import argparse
 import asyncio
@@ -83,6 +84,12 @@ def cmd_lookup(args):
     return 0
 
 
+def cmd_mcp(args):
+    from .mcp_server import main as serve
+    serve()
+    return 0
+
+
 def cmd_key(args):
     signer = keys.rotate() if args.rotate else keys.load_signer()
     print(signer.pubkey)
@@ -113,6 +120,9 @@ def main(argv=None):
     p.add_argument("topic")
     p.add_argument("--relay", action="append", help="relay URL (repeatable)")
     p.set_defaults(func=cmd_lookup)
+
+    p = sub.add_parser("mcp", help="run the MCP server on stdio, for agents")
+    p.set_defaults(func=cmd_mcp)
 
     p = sub.add_parser("key", help="print this installation's public key")
     p.add_argument("--rotate", action="store_true", help="replace it with a new key")
