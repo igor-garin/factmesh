@@ -1,14 +1,20 @@
-"""Command line: check a claim, sign a claim, show or rotate the key."""
+"""Command line: check, sign, publish, and look up claims; show or rotate the key."""
 
 import argparse
+import asyncio
 import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 from . import keys
+from .check import run_check
 from .claim import Rejected, parse_claim
 from .fetch import Fetcher
+from .receiver import Receiver
+from .relay import RelayPool
+from .reputation import Reputation
+from .store import Store
 from .validate import validate_event, validate_file
 
 EXIT_CODES = {"pass": 0, "fail": 1, "rejected": 2, "error": 3, "retracted": 4}
@@ -48,6 +54,35 @@ def cmd_sign(args):
     return 0
 
 
+def cmd_publish(args):
+    try:
+        claim = parse_claim(Path(args.path).read_text())
+    except Rejected as e:
+        print(f"not published: {e}", file=sys.stderr)
+        return EXIT_CODES["rejected"]
+    if claim.retracted:
+        print("publishing a retraction; its check is not run", file=sys.stderr)
+    else:
+        r = run_check(claim.topic, claim.check, Fetcher())
+        if r.result != "pass":
+            print(f"not published: own check gave {r.result} ({r.detail})", file=sys.stderr)
+            return EXIT_CODES[r.result]
+    ev = keys.load_signer().claim_event(claim, int(claim.generated_at.timestamp()))
+    status = asyncio.run(RelayPool(args.relay or None).publish(ev))
+    for url, s in status.items():
+        print(f"{url}  {s}")
+    confirmed = sum(s == "confirmed" for s in status.values())
+    print(f"{confirmed} of {len(status)} relays confirmed event {ev['id']}")
+    return 0 if confirmed else EXIT_CODES["error"]
+
+
+def cmd_lookup(args):
+    receiver = Receiver(RelayPool(args.relay or None), Store(), Reputation(), Fetcher())
+    found, stats = asyncio.run(receiver.lookup(args.topic))
+    print(json.dumps({"facts": found, "stats": stats.__dict__}, indent=2))
+    return 0
+
+
 def cmd_key(args):
     signer = keys.rotate() if args.rotate else keys.load_signer()
     print(signer.pubkey)
@@ -67,6 +102,17 @@ def main(argv=None):
     p = sub.add_parser("sign", help="sign a claim file with this installation's key")
     p.add_argument("path")
     p.set_defaults(func=cmd_sign)
+
+    p = sub.add_parser("publish", help="check a claim file yourself, sign it, and "
+                                       "send it to relays")
+    p.add_argument("path")
+    p.add_argument("--relay", action="append", help="relay URL (repeatable)")
+    p.set_defaults(func=cmd_publish)
+
+    p = sub.add_parser("lookup", help="fetch, verify, and print facts for a topic")
+    p.add_argument("topic")
+    p.add_argument("--relay", action="append", help="relay URL (repeatable)")
+    p.set_defaults(func=cmd_lookup)
 
     p = sub.add_parser("key", help="print this installation's public key")
     p.add_argument("--rotate", action="store_true", help="replace it with a new key")

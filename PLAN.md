@@ -64,11 +64,13 @@ rejected, with the reason.
 
 ## Phase 4: network layer
 
-- [ ] Publish a signed claim to several relays at once.
-- [ ] Subscribe by topic, drop duplicates, verify signatures.
-- [ ] Reconnect and fall back when a relay is down.
+- [x] Publish a signed claim to several relays at once, confirmed by read-back.
+- [x] Subscribe by topic, drop duplicates, verify signatures.
+- [x] Reconnect and fall back when a relay is down.
 
 **Result:** two machines exchange a claim, and the receiver verifies it.
+(Done between separate installations on one machine over public relays;
+repeat across two machines.)
 
 ## Phase 5: agent client (MCP server)
 

@@ -95,5 +95,14 @@ gate was three.
 The spec (SPEC.md §5) queries with `#L` and `#t` together. Tested on the four
 relays that passed: primal, nostr.net, snort.social, oxtr.dev. Each returned
 the probe event for `{"kinds":[30078],"#L":["afx"],"#t":[<topic>]}` and nothing
-for the same filter with a different `L` value, so both tags are indexed and
-combined as AND.
+for the same filter with a different `L` value.
+
+**Correction (Phase 4).** That test could not show whether `#t` was applied:
+only one `afx` event existed. Once a second `afx` event with another topic
+existed, relay.snort.social returned it for a `#t` filter it did not match, so
+snort.social applies `#L` but ignores `#t` when both are given. The other three
+were not re-tested for this. Receivers re-check the topic of every event
+(SPEC.md §9), so this costs bandwidth, not correctness; but on such a relay a
+query returns every claim on the network, capped by `limit`, and claims for
+the wanted topic can be crowded out. Health tracking should eventually prefer
+relays that filter correctly.

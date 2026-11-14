@@ -39,19 +39,28 @@ def _finish(claim, fetcher):
     return Result(r.result, detail=r.detail, claim=claim, checked_url=r.final_url)
 
 
+def static_event(ev, now: datetime) -> Claim:
+    """Steps 1-14 of SPEC.md §7: everything that needs no network.
+    Raises Rejected."""
+    if not isinstance(ev, dict):
+        raise Rejected("wrong-kind", "event is not an object")
+    if ev.get("kind") != KIND:
+        raise Rejected("wrong-kind", str(ev.get("kind")))
+    if not verify_signature(ev):
+        raise Rejected("bad-signature")
+    check_labels(ev)
+    if not isinstance(ev.get("content"), str):
+        raise Rejected("bad-header", "content is not a string")
+    claim = parse_claim(ev["content"])
+    check_tags(ev, claim)
+    _times(claim, now, ev.get("created_at"))
+    return claim
+
+
 def validate_event(ev, now: datetime, fetcher):
     """Run every step of SPEC.md §7 on a Nostr event."""
     try:
-        if ev.get("kind") != KIND:
-            raise Rejected("wrong-kind", str(ev.get("kind")))
-        if not verify_signature(ev):
-            raise Rejected("bad-signature")
-        check_labels(ev)
-        if not isinstance(ev.get("content"), str):
-            raise Rejected("bad-header", "content is not a string")
-        claim = parse_claim(ev["content"])
-        check_tags(ev, claim)
-        _times(claim, now, ev.get("created_at"))
+        claim = static_event(ev, now)
     except Rejected as e:
         return Result("rejected", e.reason, e.detail)
     return _finish(claim, fetcher)

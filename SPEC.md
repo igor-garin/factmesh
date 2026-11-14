@@ -269,6 +269,10 @@ These rules are informative except where MUST is used.
 - Receivers SHOULD query at least 3 relays and merge the results.
 - Receivers MUST enforce `stale_after` themselves; some relays ignore
   `expiration`.
+- Receivers MUST NOT rely on relay filtering. Some relays apply only part of
+  a filter and return events for other topics; §7 step 11 catches these, and
+  a receiver SHOULD set them aside without counting them against the
+  publisher.
 
 ## 10. Versioning
 

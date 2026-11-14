@@ -20,7 +20,7 @@ class Reputation:
         self._recent = defaultdict(deque)
         try:
             self.counts = json.loads(self.path.read_text())
-        except FileNotFoundError:
+        except (FileNotFoundError, ValueError):
             self.counts = {}
 
     def allow(self, pubkey, now: float) -> bool:
