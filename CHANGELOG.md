@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2 (2026-11-14)
+
+- Adds [server.json](server.json) for the official MCP registry, as
+  `io.github.igor-garin/factmesh`; the README carries the registry's
+  ownership marker. No code changes.
+
 ## 0.1.1 (2026-11-14)
 
 - `subscribe` returns the current verified facts on its first call. It used

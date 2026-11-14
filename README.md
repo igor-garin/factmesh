@@ -1,5 +1,7 @@
 # factmesh
 
+<!-- mcp-name: io.github.igor-garin/factmesh -->
+
 Fresh, checkable facts for AI agents, shared over an open network.
 
 An agent's knowledge stops at its training cutoff, and package releases,
