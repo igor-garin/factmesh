@@ -50,14 +50,14 @@ switch the v0 transport before continuing, and update DESIGN.md.
 No network gossip yet. Everything here runs and is tested offline or against
 real public registries.
 
-- [ ] Claim parser and validator, tested against the vectors.
-- [ ] Checker for the three check kinds, with the safety rules built in:
+- [x] Claim parser and validator, tested against the vectors. (64/64 pass)
+- [x] Checker for the three check kinds, with the safety rules built in:
       HTTPS only, allowlisted hosts only, GET only, no redirect off the
       allowlist, response size and time limits.
-- [ ] Local key generation and claim signing.
-- [ ] Local store: verified claims saved as a folder of markdown files, expired
+- [x] Local key generation and claim signing.
+- [x] Local store: verified claims saved as a folder of markdown files, expired
       ones removed.
-- [ ] Per-sender rate limit and a local record of whose claims passed.
+- [x] Per-sender rate limit and a local record of whose claims passed.
 
 **Result:** a command that takes a claim file and prints pass, fail, or
 rejected, with the reason.

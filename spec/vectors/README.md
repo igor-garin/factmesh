@@ -65,7 +65,7 @@ never use it to publish.
 | Result | Count | What they cover |
 |---|---|---|
 | `pass` | 6 | each check kind, scoped npm names, a redirect inside the binding |
-| `fail` | 6 | wrong value, strict JSON types, non-JSON body, missing pointer, pointer to an object, `http-status` not following redirects |
+| `fail` | 8 | wrong value, strict JSON types (string vs number, bool vs number), non-JSON body, missing pointer, pointer to an object, status other than 200, `http-status` not following redirects |
 | `error` | 4 | timeout, redirect outside the binding, private address, oversized body |
 | `retracted` | 1 | `status: deprecated` |
-| `rejected` | 40 | every reason code in §7 |
+| `rejected` | 45 | every reason code in §7, including repeated YAML keys, CRLF lines, deep nesting, and non-UTC times |

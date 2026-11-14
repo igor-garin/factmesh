@@ -249,6 +249,14 @@ def build():
         [resp(f["check"]["url"], status=301, body="",
               location="https://api.github.com/repos/psf/requests2")])
 
+    vec("fail-non-200", "A JSON check needs status 200, even if the body matches.",
+        event(BASE), {"result": "fail"},
+        [resp(NPM_URL, status=404, body='{"latest":"1.3.0"}')])
+
+    f = with_(check={**BASE["check"], "expect": True})
+    vec("fail-bool-not-number", "JSON equality is strict: true is not 1.",
+        event(f), {"result": "fail"}, [resp(NPM_URL, body='{"latest":1}')])
+
     # --- error --------------------------------------------------------------
     vec("error-timeout", "No response within 10 s: no conclusion.",
         event(BASE), {"result": "error"}, [resp(NPM_URL, timeout=True)])
@@ -307,7 +315,26 @@ def build():
                                               'title: !!binary aGVsbG8=')),
         "bad-header")
 
+    rej("reject-yaml-duplicate-key", "A key repeated in one mapping.",
+        event(BASE, raw=content(BASE).replace('status: "stable"',
+                                              'status: "stable"\nstatus: "deprecated"')),
+        "bad-header")
+    rej("reject-crlf", "Lines must end with LF, not CRLF.",
+        event(BASE, raw=content(BASE).replace("\n", "\r\n")), "bad-header")
+    rej("reject-too-deep", "Header nests deeper than 4 levels.",
+        event(BASE, raw=content(BASE).replace(
+            'title: "npm left-pad latest is 1.3.0"',
+            'extra: {a: {b: {c: {d: {e: 1}}}}}')), "bad-header")
+
     rej("reject-wrong-type", "type is not Claim.", event(with_(type="Note")), "bad-field")
+    rej("reject-time-not-utc", "Times must be UTC.",
+        event(BASE, raw=content(BASE).replace("stale_after: 2026-11-15T10:00:00Z",
+                                              "stale_after: 2026-11-15T12:00:00+02:00")),
+        "bad-field")
+    rej("reject-time-no-offset", "Times must carry the Z suffix.",
+        event(BASE, raw=content(BASE).replace("stale_after: 2026-11-15T10:00:00Z",
+                                              "stale_after: 2026-11-15T10:00:00")),
+        "bad-field")
     rej("reject-missing-stale-after", "stale_after is required.",
         event(BASE, raw=content(with_(stale_after=DELETE))), "bad-field")
     rej("reject-missing-generated-by", "generated.by is required.",

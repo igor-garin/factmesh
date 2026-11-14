@@ -45,11 +45,12 @@ Optional notes for people. Never shown to an agent.
 
 ### 2.1 Parsing
 
-- The file MUST start with a line `---`, and the header MUST end at the next
-  line that is exactly `---`.
+- Lines end with LF (`\n`). The file MUST start with a line `---`, and the
+  header MUST end at the next line that is exactly `---`.
 - The header is parsed as YAML with a safe loader. Receivers MUST reject a
-  header that uses anchors, aliases, or explicit type tags (`!`), or that nests
-  deeper than 4 levels.
+  header that uses anchors, aliases, or explicit type tags (`!`), that repeats
+  a key within one mapping, or that nests deeper than 4 levels. Repeated keys
+  are rejected because YAML loaders disagree on which one wins.
 - The whole file, header plus body, MUST NOT exceed 8192 bytes.
 
 ### 2.2 Fields
@@ -99,12 +100,13 @@ A check is one GET request and one comparison. Claims never carry code.
 | `kind` | Other fields | Passes when |
 |---|---|---|
 | `http-status` | `url`, `expect` (integer 100–599) | the status of the response to `url` equals `expect`. Redirects are not followed: a 3xx status is the result. |
-| `json-field-equals` | `url`, `pointer`, `expect` | the response is JSON, `pointer` (RFC 6901 JSON Pointer) resolves, and the value there equals `expect` |
-| `text-contains` | `url`, `expect` (string, 8–200 characters) | the response body, decoded as UTF-8, contains `expect` exactly (case-sensitive) |
+| `json-field-equals` | `url`, `pointer`, `expect` | the status is 200, the body is JSON, `pointer` (RFC 6901 JSON Pointer) resolves, and the value there equals `expect` |
+| `text-contains` | `url`, `expect` (string, 8–200 characters) | the status is 200 and the body, decoded as UTF-8, contains `expect` exactly (case-sensitive) |
 
 For `json-field-equals`, `expect` MUST be a string, number, boolean, or null,
-and equality is strict JSON equality: `"1"` does not equal `1`, and a pointer
-to an object or array never passes.
+and equality is strict JSON equality: `"1"` does not equal `1`, `true` does not
+equal `1`, numbers compare by value (`1` equals `1.0`), and a pointer to an
+object or array never passes.
 
 A check with an unknown `kind`, or with missing or extra fields for its kind,
 MUST be rejected.
@@ -160,7 +162,8 @@ Running a check gives one of:
 
 - `pass`: the condition in §4.1 held.
 - `fail`: the response arrived and the condition did not hold (including a
-  JSON check on a body that is not JSON, or a pointer that does not resolve).
+  status other than 200 for a JSON or text check after redirects, a body that
+  is not JSON or not UTF-8, or a pointer that does not resolve).
 - `error`: no conclusion: network failure, timeout, size limit, a host that
   resolves to a non-public address (§4.4), or a redirect that breaks §4.2 or
   §4.3. An `error` MUST NOT count against the publisher.
