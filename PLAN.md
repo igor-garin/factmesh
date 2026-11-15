@@ -122,9 +122,10 @@ one.
       environment)
 - [x] Document the one-line setup for Claude Code and at least one other agent
       host, so the project is visibly not tied to one vendor.
-- [ ] Tag `v0.1.0` and write release notes that state the known risks plainly.
-      (Tagged and released; GitHub release notes still to write.)
-- [ ] Submit to the public MCP server directories.
+- [x] Tag `v0.1.0` and write release notes that state the known risks plainly.
+      (GitHub release v0.1.1)
+- [x] Submit to the public MCP server directories. (Official MCP registry as
+      `io.github.igor-garin/factmesh`, 0.1.2)
 - [ ] Announce: a short post explaining the idea, linked from Hacker News,
       relevant Reddit and Discord communities, and Nostr itself.
 
